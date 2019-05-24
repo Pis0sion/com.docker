@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="__MODES__/assets/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__MODES__/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<script type="text/javascript" src="__JS__/H-ui.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.admin.js"></script>
+		
+		<script  src="__PLUGINS__/layer/layer.js"></script>
+	    <script  src="__PLUGINS__/common.js"></script>
+		<title>修改</title>
+	</head>
+	<body>
+		
+		<div class="add_menber" id="add_menber_style" >
+			<form id="form" name="user-form" style="padding-top:2% ">
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>订单号： </label>
+					<div class="col-sm-8">
+						<input value="{$plan_form_no}" id="form_no" name="form_no" type="text" class="form-control" required/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>金额： </label>
+					<div class="col-sm-8">
+						<input value="{$plan_money}" id="money" name="money" type="text" class="form-control" required/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>手续费： </label>
+					<div class="col-sm-8">
+						<input value="{$plan_fee}" id="fee" name="fee" type="text" class="form-control" required/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>返回信息： </label>
+					<div class="col-sm-8">
+						<input value="{$plan_msg}" id="msg" name="msg" type="text" class="form-control" required/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>状态： </label>
+					<div class="col-sm-8">
+						<select name="state" class="form-control" style="margin-left: 10px;">
+							<option value="0">未执行</option>
+							<option value="1" {if $plan_state==1}selected{/if}>已支付</option>
+							<option value="2" {if $plan_state==2}selected{/if}>失败</option>
+							<option value="3" {if $plan_state==3}selected{/if}>支付中</option>
+							<option value="4" {if $plan_state==4}selected{/if}>已退款</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""><i>*</i>时间： </label>
+					<div class="col-sm-8">
+						<input value="{$plan_pay_time}" id="pay_time" name="pay_time" type="text" class="form-control" required/>
+					</div>
+				</div>
+				<div class="form-group">
+					<label class="col-sm-2 control-label no-padding-right" for=""></label>
+					<div class="col-sm-8">
+						<button onclick="saveSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+					</div>
+				</div>
+			</form>
+		</div>
+		<script>
+			function  saveSubmit() {
+				var url    = $("#form").attr('action');
+				var data   = $("#form").serialize();
+				ajaxPost(url,$("#bank-btn"),data,function (r) {
+		            $("#bank-btn").removeAttr('disabled');
+		            var index = parent.layer.getFrameIndex(window.name);
+					parent.layer.close(index);
+		        })
+			}
+		</script>
+	</body>
+</html>

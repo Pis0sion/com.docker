@@ -1,0 +1,17 @@
+---------------------------------------------------------------
+[ 2019-02-11T17:06:20+08:00 ] 47.92.100.7 GET app.babadao.com/
+[运行时间：0.026492s] [吞吐率：37.75req/s] [内存消耗：3,082.95kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 4.1.1; Nexus 7 Build/JRO03D))',
+  'host' => 'app.babadao.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/index/index/register.html [ array (
+  0 => 'id',
+) ]

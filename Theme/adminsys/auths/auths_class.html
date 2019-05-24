@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="__MODES__/assets/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__MODES__/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<script type="text/javascript" src="__JS__/H-ui.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.admin.js"></script>
+		
+		<script  src="__PLUGINS__/layer/layer.js"></script>
+	    <script  src="__PLUGINS__/common.js"></script>
+		<title>文章列表</title>
+	</head>
+
+<body>
+	
+	
+<script type="text/javascript">
+	var page_url = "{:Url('/Admin/Auths/reg_auth')}";
+</script>
+
+
+<div class="row">
+    <div class="col-lg-12">
+        <section class="panel">
+            <div class="panel-body">
+                <div class="actions">
+                    <div class="btn-group btn-group-devided" data-toggle="buttons">
+                    	<button type="button" class="btn btn-danger" id="agent_add">
+                    		<i class="fa fa-plus-circle"></i> 新增
+                    	</button>
+                    	<button type="button" class="btn btn-info link-ajax" data-url="{:Url('/Admin/Auths/cache_class')}">
+                    		<i class="fa fa-refresh"></i> 缓存
+                    	</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>	
+<div class="row">
+    <div class="col-md-12">
+        <div class="portlet light bordered">
+           
+            <div class="portlet-body">
+                <div class="dataTables_wrapper no-footer">
+                	<div class="table-scrollable">
+                        <form name="agent-class" role="form" action="{:Url('/Admin/Auths/auths_class')}">
+                    		<div class="table-responsive">
+                                <table class="table table-bordered table-hover table-striped" id="agent_table">
+                                    <thead>
+                                        <tr>
+                                            <th class="col-lg-2">编号</th>
+                                            <th class="col-lg-4">名字</th>
+                                            <th class="col-lg-4">标识</th>
+                                            <th class="col-lg-2">操作</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    	{foreach name='classes' item='v' key='k'}
+                                        <tr id="tr{$k}">
+                                            <td>{$v.class_id}</td>
+                                            <td>
+                                            	<span id="lb_name_{$k}">{$v.class_name}</span>
+                                            	<input id="in_name_{$k}" type="hidden" class="name" name="name[]" value="{$v.class_name}" />
+                                            	<a href="javascript:void(0)" class="link-prompt" data-prompt="{$v.class_name}" data-to="#in_name_{$k}" data-show="#lb_name_{$k}">
+                                            		<i class="fa fa-edit"></i>
+                                            	</a>
+                                            </td>
+                                            <td>
+                                            	<span id="lb_tag_{$k}">{$v.class_tag}</span>
+                                            	<input id="in_tag_{$k}" type="hidden" class="tag" name="tag[]" value="{$v.class_tag}" />
+                                            	<a href="javascript:void(0)" class="link-prompt" data-prompt="{$v.class_tag}" data-to="#in_tag_{$k}" data-show="#lb_tag_{$k}">
+                                            		<i class="fa fa-edit"></i>
+                                            	</a>
+                                            </td>
+                                            <td>
+                                            	<a href="javascript:void(0);" onclick="saveClass({$k},this)">保存</a>
+                                            </td>
+                                        </tr>
+                                        {/foreach}
+									</tbody>
+                                </table>
+                            </div>
+                    	</form>
+                	</div>
+                	<div class="form-actions right">
+                        <button type="button" id="agent-class" class="btn btn-danger">批量保存</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="__JS__/auths.js" type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+	  <link rel="stylesheet" href="__MODES__/assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+		<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="__MODES__/assets/css/ace-ie.min.css" />
+	<![endif]-->
+		<script src="__PLUGINS__/jquery-1.9.1.min.js"></script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script src="__MODES__/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="__MODES__/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__MODES__/assets/js/ace-elements.min.js"></script>
+		<script src="__MODES__/assets/js/ace.min.js"></script>
+		<title>系统设置</title>
+
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<script src="__PLUGINS__/common.js"></script>
+	</head>
+
+	<body>
+		<div class="margin clearfix">
+			<div class="stystems_style">
+				<div class="tabbable">
+
+					<div class="tab-content">
+						<form name="bank-form" id="bank-form" action="{:Url('Admin/Userbank/upbank')}?id={$card.card_id}">
+						<div id="home" class="tab-pane active">
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>开户人： </label>
+								<div class="col-sm-8"><input type="text"   readonly="readonly"  value="{$card.card_name}" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>卡类型： </label>
+								<div class="col-sm-8"><input type="text"   readonly="readonly"  value="{$card.card_type==1?'信用卡':'储蓄卡'}" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>开户银行： </label>
+								<div class="col-sm-8"><input type="text" readonly="readonly" value="{$card.card_bank_id|getBankList='list_name'}" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>银行卡号： </label>
+								<div class="col-sm-8"><input type="text" id="website-title" placeholder="控制在25个字、50个字节以内" value="{$card.card_no}" class="col-xs-10 "></div>
+							</div>
+							{if $card['card_type']==1}
+
+
+								<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>信用卡额度： </label>
+									<div class="col-sm-8"><input type="text" id="card_credit_limit" name="card_credit_limit" placeholder="5个左右,8汉字以内,用英文,隔开" value="{$card.card_credit_limit}" class="col-xs-10 "></div>
+								</div>
+								
+								<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>帐单日： </label>
+									<div class="col-sm-8"><input type="text" id="card_account_day" name="card_account_day" placeholder="" value="{$card.card_account_day}" class="col-xs-10 "></div>
+								</div>
+								<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>还款日： </label>
+									<div class="col-sm-8"><input type="text" id="card_repayment_day" name="card_repayment_day" placeholder="" value="{$card.card_repayment_day}" class="col-xs-10 "></div>
+								</div>
+							{/if}
+								<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>银行预留手机号： </label>
+									<div class="col-sm-8"><input type="text" id="card_phone" name="card_phone" placeholder="" value="{$card.card_phone}" class="col-xs-10 "></div>
+								</div>
+							
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>开户省： </label>
+								<div class="col-sm-8"><input type="text" id="card_province" name="card_province" placeholder="" value="{$card.card_province}" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>开户市： </label>
+								<div class="col-sm-8"><input type="text" id="card_city" name="card_city" placeholder="" value="{$card.card_city}" class="col-xs-10 "></div>
+							</div>
+						</form>
+							<div class="form-group"><font color="red">直接修改数据不验证4要素请谨慎修改</font></div>
+							<div class="Button_operation">
+								<button onclick="saveSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<script>
+			function  saveSubmit () {
+				var url    = $("#bank-form").attr('action');
+				var data   = $("#bank-form").serialize();
+				ajaxPost(url,$("#bank-btn"),data,function (r) {
+		            $("#bank-btn").removeAttr('disabled');
+		            //location.reload();
+		            window.parent.location.reload(); //刷新父页面
+		            var index = parent.layer.getFrameIndex(window.name);
+					parent.layer.close(index);
+		        })
+			}
+		</script>
+	</body>
+
+</html>

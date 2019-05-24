@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>代理后台</title>
+</head>
+<style>
+    .pagination { display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 4px; }
+    .pagination li { display: inline; }
+    .pagination li a { position: relative;background-color: #fff; border: 1px solid #ddd; }
+</style>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                  <a href="">首页</a>
+                  <a href="">代理商管理</a>
+                  <a><cite>下级用户</cite></a>
+                  <a><cite>{$pname}</cite></a>
+                </span>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                    <form action="{:Url('agent/user/user')}" id="form">
+                        <div class="layui-form layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-form-mid">用户名:</div>
+                                <div class="layui-input-inline" style="width: 100px;">
+                                  <input type="text" autocomplete="off" value="{$account}" name="account" class="layui-input">
+                                </div>
+                                <div class="layui-form-mid">姓名:</div>
+                                <div class="layui-input-inline" style="width: 100px;">
+                                  <input type="text" autocomplete="off" value="{$name}" name="name" class="layui-input">
+                                </div>
+                                <input type="hidden" name="pid" value="{$pid}">
+                                <button class="layui-btn layui-btn-blue" id="sub">查询</button>
+                                <button class="layui-btn layui-btn-primary">重置</button>&nbsp;&nbsp;&nbsp;
+                                <b><a href="javascript:history.go(-1)" style="border-radius:20px;background:#c2c2c2" class="layui-btn layui-btn-primary">返回</a></b>
+                            </div>
+                        </div>
+                    </form>
+                        
+                        <table class="layui-table">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>用户名</th>
+                              <th>姓名</th>
+                              <th>电话</th>
+                              <th>注册时间</th>
+                              <th>状态</th>
+                              <th>会员类型</th>
+                              <th >操作</th>
+                              </tr>
+                          </thead>
+                          {volist name="list" id="vo"}
+                          <tbody>
+                            <tr>
+                              <td>{$vo.user_id}</td>
+                              <td>{$vo.user_account}</td>
+                              <td>{$vo.user_name}</td>
+                              <td>{$vo.user_phone}</td>
+                              <td>{$vo.user_time|date="Y-m-d H:i:s"}</td>
+                              {if $vo.user_state==1}
+                              <td>冻结</td>
+                              {else}
+                              <td>正常</td>
+                              {/if}
+                              <td>{$vo.type_name}</td>
+                              <td class="td-manage">
+                                <a title="查看下级用户"  onclick="next_user_show({$vo.user_id})" href="javascript:;">
+                                  <i class="layui-icon">&#xe770;</i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                          {/volist}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="page" style="float: right;">
+      <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+        {$list|raw}
+      </div>
+    </div>
+    </div>
+    <script src="__JS__/layui.all.js"></script>
+    <script src="__JS__/layer/layer.js"></script>
+    <script src="__JS__/jquery.min.js"></script>
+    <script>
+    //查看下级客户
+    function next_user_show(agent_id){
+      window.location.href = "{:Url('agent/user/user')}?pid="+agent_id;
+    }
+      $("#sub").click(function(){
+        $("#form").submit();
+      })
+    </script>
+</body>
+</html>

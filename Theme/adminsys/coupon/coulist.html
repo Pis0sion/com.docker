@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<script src="__MODES__/assets/js/jquery.min.js"></script>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+		</script>
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__MODES__/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.admin.js"></script>
+		
+		<script  src="__PLUGINS__/layer/layer.js"></script>
+	    <script  src="__PLUGINS__/common.js"></script>
+		<title>用户列表</title>
+	</head>
+	<body>
+		<div class="page-content clearfix">
+			<div id="Member_Ratings">
+				<div class="d_Confirm_Order_style">
+					<form method="post" action="">
+						<div class="search_style">
+							<ul class="search_content clearfix">
+								<li><label class="l_f">优惠券名称</label><input name="keywords" id="keywords" type="text" class="text_add" placeholder="输入优惠券名称" style=" width:400px" /></li>
+								<li style="width:90px;"><input type="submit" id="search" class="btn_search" value="查询"></li>
+								<li style="width:90px;"><button type="button" id="searchAout" class="btn_search"><i class="icon-search"></i>全部</button></li>
+							</ul>
+							<div><a title="添加" href="javascript:;" onclick="add()" class="btn btn-xs btn-success">添加</a></div>
+						</div>
+					</form>
+					<!---->
+					<div class="table_menu_list">
+						<table class="table table-striped table-bordered table-hover" >
+							<thead>
+								<tr>
+									<th width="25"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
+									<th width="80">ID</th>
+									<th width="100">名称</th>
+									<th width="100">类型</th>
+									<th width="100">券值</th>
+									<th width="150">过期时间</th>
+									<th width="100">赠送规则</th>
+									<th width="100">状态</th>
+									<th width="120">操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								{volist name='list' id='v' }
+									<tr>
+										<td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
+										<td>{$v.cou_id}</td>
+										<td>{$v.cou_name}</td>
+										<td>
+											{switch v.cou_type}
+											    {case 1}商品积分券{/case}
+											    {case 2}升级等级券{/case}
+											    {case 3}计划优惠券{/case}
+											    {case 4}收款优惠券{/case}
+											{/switch}
+										</td>
+										<td>{$v.cou_value}</td>
+										<td>{$v['cou_time']==0?'长期':$v['cou_time'].'天'}</td>
+										<td>
+											{switch v.cou_rule}
+											    {case 0}注册{/case}
+											    {case 1}分享{/case}
+											    {case 2}推广{/case}
+											    {case 3}推广升级{/case}
+											{/switch}
+										</td>
+										<td>
+											{switch v.cou_state}
+											    {case 1}正常{/case}
+											    {case 0}关闭{/case}
+											{/switch}
+										</td>
+										<td>
+											{if $v['cou_state'] == 1 }
+	                                    	<a href="javascript:void(0);" class="link-confirm btn btn-xs btn-danger" data-url="{:Url('/Admin/Coupon/conpsta')}?id={$v['cou_id']}" data-confirm="您确定要禁用吗？">禁用</a>
+	                                    	{else /}
+	                                    	<a href="javascript:void(0);" class="link-confirm btn btn-xs btn-info" data-url="{:Url('/Admin/Coupon/conpsta')}?id={$v['cou_id']}" data-confirm="您确定要启用吗？">启用</a>
+	                                    	{/if}
+											<a title="编辑" href="javascript:;" onclick="edit('{$v.cou_id}')" class="btn btn-xs btn-success">编辑</a>
+										</td>
+									</tr>
+								{/volist}
+							</tbody>
+						</table>
+					</div>
+					<div>
+                        {//$list|raw}
+		            </div>
+				</div>
+			</div>
+		</div>
+		<!--添加用户图层-->
+		
+	</body>
+
+</html>
+<script>
+	jQuery(function($) {
+		
+		$('#search').on('click', function() {
+			var text = $('#keywords').val();
+			if(text==''){
+				layer.msg('请输入搜索关键词');
+				return false;
+			}
+			// window.location.href = "{:Url('Admin/Coupon/coulist')}?keywords="+text; 
+		});
+		
+		$('#searchAout').on('click', function() {
+			window.location.href = "{:Url('Admin/Coupon/coulist')}"; 
+		});
+		
+		$('table th input:checkbox').on('click', function() {
+			var that = this;
+			$(this).closest('table').find('tr > td:first-child input:checkbox')
+				.each(function() {
+					this.checked = that.checked;
+					$(this).closest('tr').toggleClass('selected');
+				});
+
+		});
+
+	});
+
+	// 添加操作
+	function add(){
+		window.location.href = "{:Url('Admin/Coupon/addconp')}"; 
+	}
+
+	// 修改操作
+	function edit(id){
+		window.location.href = "{:Url('Admin/Coupon/upconp')}?id="+id; 
+	}
+
+</script>

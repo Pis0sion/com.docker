@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>个人资料</title>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-row">
+              <div class="layui-card">
+                  <form class="layui-form layui-card-body" id="doform">
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">开户人</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="card_name" required="" lay-verify="required" placeholder="" autocomplete="off" id="card_name" readOnly="true" value="{$data['card_name']}" class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">所属银行</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="" required="" lay-verify="required" placeholder="" autocomplete="off" id="bankname" readOnly="true" value="{$data['bankname']}" class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">银行卡号</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="card_no" required="" lay-verify="required" placeholder="" autocomplete="off" value="{$data['card_no']}" readOnly="true" id="card_no" class="layui-input">
+                      </div>
+                    </div>
+                    <input type="hidden" name="card_id" value="{$data['card_id']}">
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">预留电话</label>
+                      <div class="layui-input-block">
+                        <input type="text" name="card_phone" required="" lay-verify="required" placeholder="" autocomplete="off" value="{$data['card_phone']}" readOnly="true" id="card_phone" class="layui-input">
+                      </div>
+                    </div>
+                    <div class="layui-form-item">
+                      <label class="layui-form-label">开户地址</label>
+                      <div class="layui-input-inline">
+                        <input type="text" name="card_province" required="" value="{$data['card_province']}{$data['card_city']}" id="card_province" lay-verify="required" placeholder="" autocomplete="off" readOnly="true" class="layui-input">
+                      </div>
+                    </div>
+                  </form>  
+              </div>
+        </div>
+    </div>
+    <script src="__JS__/layui.all.js"></script>
+    <script src="__JS__/jquery.min.js"></script>
+
+</body></html>

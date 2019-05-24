@@ -1,0 +1,3370 @@
+---------------------------------------------------------------
+[ 2018-12-20T09:28:45+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.080886s] [吞吐率：12.36req/s] [内存消耗：3,289.59kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:28:45+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.052641s] [吞吐率：19.00req/s] [内存消耗：3,289.59kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:28:45+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.072527s] [吞吐率：13.79req/s] [内存消耗：3,290.02kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'type' => '1',
+  'page' => '1',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:28:45+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.095701s] [吞吐率：10.45req/s] [内存消耗：4,210.41kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000349s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:28:45+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.038446s] [吞吐率：26.01req/s] [内存消耗：3,289.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:28:46+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.038268s] [吞吐率：26.13req/s] [内存消耗：4,221.51kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => '*/*',
+  'origin' => 'file://',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'android',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000535s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:28:46+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/getBank?_=1545269326407
+[运行时间：0.477698s] [吞吐率：2.09req/s] [内存消耗：4,373.96kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1545269326407',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000337s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000380s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:28:46+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=1068077809986961409&page=1&_=1545269327253
+[运行时间：0.308338s] [吞吐率：3.24req/s] [内存消耗：4,375.04kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1068077809986961409',
+  'page' => '1',
+  '_' => '1545269327253',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000330s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000292s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:28:51+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.026784s] [吞吐率：37.34req/s] [内存消耗：3,289.59kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:28:54+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.026639s] [吞吐率：37.54req/s] [内存消耗：3,289.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:29:04+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/message/index
+[运行时间：0.030177s] [吞吐率：33.14req/s] [内存消耗：2,952.99kb] [文件加载：74]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '13',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'page' => '1',
+)
+---------------------------------------------------------------
+[ 2018-12-20T09:29:04+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/message/index
+[运行时间：0.020049s] [吞吐率：49.88req/s] [内存消耗：2,382.53kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T09:29:13+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Main/login
+[运行时间：0.041514s] [吞吐率：24.09req/s] [内存消耗：4,318.95kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '40',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '15563746366',
+  'password' => '123456',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000312s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001069s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_phone` = '15563746366'  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] UPDATE `cc_user`  SET `user_login_time` = 1545269353 , `user_token` = '7136ea8ce62bc671ef400ef0736e6243'  WHERE  `user_id` = 403 [ RunTime:0.002592s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_log` [ RunTime:0.000877s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_log` (`log_uid` , `log_ip` , `log_time`) VALUES (403 , '140.250.240.214' , 1545269353) [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:18+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.049563s] [吞吐率：20.18req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010593s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.000575s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:18+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.043100s] [吞吐率：23.20req/s] [内存消耗：4,619.92kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000316s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000239s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:18+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.047792s] [吞吐率：20.92req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000376s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.000448s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:18+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Make/index
+[运行时间：0.049643s] [吞吐率：20.14req/s] [内存消耗：4,459.15kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000976s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 1 LIMIT 1 [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_mission` WHERE  `mission_uid` = 403  AND `mission_state` = 2 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_pay_records` WHERE  `records_uid` = 403  AND `records_state` = 5 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_fee` = 0  AND `type_state` = 0 ORDER BY `type_sort` ASC [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_pid` = 403  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.001077s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000195s ]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/baba/application/api/controller/Make.php:197]
+[ error ] [8]未定义数组下标: 7[/www/wwwroot/baba/application/api/controller/Make.php:197]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/baba/application/api/controller/Make.php:197]
+[ error ] [8]未定义数组下标: 7[/www/wwwroot/baba/application/api/controller/Make.php:197]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:20+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.073483s] [吞吐率：13.61req/s] [内存消耗：4,210.41kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006036s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:20+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.076878s] [吞吐率：13.01req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000350s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.000418s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:20+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.071856s] [吞吐率：13.92req/s] [内存消耗：4,221.51kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => '*/*',
+  'origin' => 'file://',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'android',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002227s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000288s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:20+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.093046s] [吞吐率：10.75req/s] [内存消耗：4,801.73kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '52',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002892s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.001115s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title`,`article_type`,`article_img`,`article_time` FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 0,10 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:34+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.041405s] [吞吐率：24.15req/s] [内存消耗：4,631.30kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:38+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.038292s] [吞吐率：26.11req/s] [内存消耗：4,631.30kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000279s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000609s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:38+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.040503s] [吞吐率：24.69req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000325s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001019s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.000389s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:29:38+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.041094s] [吞吐率：24.33req/s] [内存消耗：4,619.92kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000243s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.115725s] [吞吐率：8.64req/s] [内存消耗：4,221.51kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => '*/*',
+  'origin' => 'file://',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'android',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003681s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.007130s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.115351s] [吞吐率：8.67req/s] [内存消耗：4,210.41kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000366s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.105616s] [吞吐率：9.47req/s] [内存消耗：4,801.73kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '52',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000322s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000855s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title`,`article_type`,`article_img`,`article_time` FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 0,10 [ RunTime:0.000238s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.141535s] [吞吐率：7.07req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001293s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.001874s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.001454s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.137365s] [吞吐率：7.28req/s] [内存消耗：4,619.92kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002284s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000727s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.142711s] [吞吐率：7.01req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005107s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.001539s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.001663s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.037035s] [吞吐率：27.00req/s] [内存消耗：4,629.74kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '403' LIMIT 1 [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Make/index
+[运行时间：0.046124s] [吞吐率：21.68req/s] [内存消耗：4,457.50kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '7136ea8ce62bc671ef400ef0736e6243',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '7136ea8ce62bc671ef400ef0736e6243' LIMIT 1 [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 403  AND `card_type` = 1 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_mission` WHERE  `mission_uid` = 403  AND `mission_state` = 2 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_pay_records` WHERE  `records_uid` = 403  AND `records_state` = 5 LIMIT 1 [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_fee` = 0  AND `type_state` = 0 ORDER BY `type_sort` ASC [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_pid` = 403  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000220s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000252s ]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/baba/application/api/controller/Make.php:197]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:43+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/getBank?_=1545271183830
+[运行时间：0.442768s] [吞吐率：2.26req/s] [内存消耗：4,373.96kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1545271183830',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003631s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000687s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2018-12-20T09:59:44+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=1068077809986961409&page=1&_=1545271184500
+[运行时间：0.313371s] [吞吐率：3.19req/s] [内存消耗：4,375.04kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US,zh-CN;q=0.9',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1068077809986961409',
+  'page' => '1',
+  '_' => '1545271184500',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000589s ]
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.036701s] [吞吐率：27.25req/s] [内存消耗：4,221.55kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'file://',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'ios',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000435s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.035719s] [吞吐率：28.00req/s] [内存消耗：3,289.68kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'type' => '1',
+  'page' => '1',
+)
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.047801s] [吞吐率：20.92req/s] [内存消耗：4,209.88kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006096s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.038215s] [吞吐率：26.17req/s] [内存消耗：3,289.21kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '6',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.041819s] [吞吐率：23.91req/s] [内存消耗：3,289.27kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '6',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041024s] [吞吐率：24.38req/s] [内存消耗：3,289.21kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '6',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T13:52:26+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/getBank?_=1545285146368
+[运行时间：0.412774s] [吞吐率：2.42req/s] [内存消耗：4,373.50kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1545285146368',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2018-12-20T13:52:27+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=1068077809986961409&page=1&_=1545285146939
+[运行时间：0.363512s] [吞吐率：2.75req/s] [内存消耗：4,374.55kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1068077809986961409',
+  'page' => '1',
+  '_' => '1545285146939',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000832s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.001078s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000443s ]
+---------------------------------------------------------------
+[ 2018-12-20T13:52:30+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.029675s] [吞吐率：33.70req/s] [内存消耗：3,289.21kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '6',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T13:53:02+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Main/getsms?phone=15866081838&type=1&_=1545285182332
+[运行时间：0.291509s] [吞吐率：3.43req/s] [内存消耗：4,347.91kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '15866081838',
+  'type' => '1',
+  '_' => '1545285182332',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_state` = 0  AND ( `user_phone` = '15866081838' OR `user_account` = '15866081838' ) LIMIT 1 [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_verify` [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_verify` WHERE  `send_target` = '15866081838'  AND `send_time` BETWEEN 1545283982 AND 1545285182  AND `send_type` = 1 LIMIT 1 [ RunTime:0.000818s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_verify` (`send_code` , `send_time` , `send_target` , `send_type` , `send_state` , `send_member`) VALUES ('566808' , 1545285182 , '15866081838' , 1 , 0 , 0) [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:00:11+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login
+[运行时间：0.020021s] [吞吐率：49.95req/s] [内存消耗：2,382.18kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:11+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login
+[运行时间：0.023587s] [吞吐率：42.40req/s] [内存消耗：2,382.13kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:15+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_baba
+[运行时间：0.021595s] [吞吐率：46.31req/s] [内存消耗：2,382.10kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:15+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_baba
+[运行时间：0.020342s] [吞吐率：49.16req/s] [内存消耗：2,349.05kb] [文件加载：60]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:19+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_bb
+[运行时间：0.022482s] [吞吐率：44.48req/s] [内存消耗：2,382.13kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:19+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_bb
+[运行时间：0.020346s] [吞吐率：49.15req/s] [内存消耗：2,382.11kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:23+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_fuyu
+[运行时间：0.021223s] [吞吐率：47.12req/s] [内存消耗：2,382.10kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:00:23+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_fuyu
+[运行时间：0.021541s] [吞吐率：46.42req/s] [内存消耗：2,382.11kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:01:23+08:00 ] 183.61.51.67 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.028745s] [吞吐率：34.79req/s] [内存消耗：3,018.93kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 8_3 like Mac OS X) AppleWebKit/600.1.4 (KHTML; like Gecko) Mobile/12F70 MicroMessenger/6.1.5 NetType/WIFI',
+  'accept' => '*/*',
+  'host' => 'baba.sdshengyixing.com',
+  'pragma' => 'no-cache',
+  'connection' => 'Keep-Alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:11+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.026408s] [吞吐率：37.87req/s] [内存消耗：3,019.91kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:11+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/captcha.html
+[运行时间：0.025072s] [吞吐率：39.88req/s] [内存消耗：2,360.13kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:02:11+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/static/admin/images/loginsj.png
+[运行时间：0.021631s] [吞吐率：46.23req/s] [内存消耗：2,382.45kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:02:17+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/captcha.html?1545285808817
+[运行时间：0.021438s] [吞吐率：46.65req/s] [内存消耗：2,360.81kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  0 => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:02:20+08:00 ] 140.250.228.227 POST baba.sdshengyixing.com/_login_ba
+[运行时间：0.047973s] [吞吐率：20.84req/s] [内存消耗：4,859.48kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://baba.sdshengyixing.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+)
+[ info ] [ PARAM ] array (
+  'login_name' => 'admin',
+  'password' => '123456',
+  'code' => '692',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] UPDATE `cc_admin`  SET `admin_ip` = '140.250.228.227' , `admin_time` = 1545285740  WHERE  `admin_id` = 16 [ RunTime:0.000558s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:23+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/Admin/index/index.html
+[运行时间：0.039961s] [吞吐率：25.02req/s] [内存消耗：4,338.17kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000711s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:23+08:00 ] 101.91.60.104 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.026640s] [吞吐率：37.54req/s] [内存消耗：3,018.80kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Mobile/14D27 MicroMessenger/6.5.5 NetType/WIFI Language/zh_CN',
+  'accept' => '*/*',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:24+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/Admin/index/home.html
+[运行时间：0.049991s] [吞吐率：20.00req/s] [内存消耗：4,403.17kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000558s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_benefit` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_benefit` WHERE  `benefit_type` = 0 LIMIT 1 [ RunTime:0.000234s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.000640s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` WHERE  `upgrade_state` = 1 LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000227s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:28+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/Admin/user/index.html
+[运行时间：0.064060s] [吞吐率：15.61req/s] [内存消耗：4,652.10kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/user/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'userTypelist',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` ORDER BY `user_id` DESC LIMIT 0,10 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_state` = 0 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT `user_account` FROM `cc_user` WHERE  `user_id` = 3 LIMIT 1 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT `agent_account` FROM `cc_agent` WHERE  `agent_id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:02:50+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Main/register
+[运行时间：0.052042s] [吞吐率：19.22req/s] [内存消耗：4,374.95kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '116',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '15866081838',
+  'smscode' => '566808',
+  'keywords' => '123456',
+  'recommend' => '121666',
+  'rekeywords' => '123456',
+  'Longitude' => '',
+  'latitude' => '',
+  'Checkbox' => 'on',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_state` = 0  AND ( `user_phone` = '15866081838' OR `user_account` = '15866081838' ) LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_verify` [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_verify` WHERE  `send_target` = '15866081838'  AND `send_state` = 0  AND `send_type` = 1 ORDER BY `send_time` DESC LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] UPDATE `cc_user_verify`  SET `send_state` = 1  WHERE  `send_id` = 624 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_code` = '826944' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_code` = '121666' LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user` (`user_pid` , `user_agent_id` , `user_code` , `user_phone` , `user_account` , `user_password` , `user_type_id` , `user_time` , `user_ip` , `user_token` , `user_longitude` , `user_latitude` , `user_isactivation`) VALUES (3 , 1 , '826944' , '15866081838' , '15866081838' , 'e10adc3949ba59abbe56e057f20f883e' , 1 , 1545285770 , '140.250.240.214' , '6796025bba9983a1f0f3331f4594ed6b' , '' , '' , 0) [ RunTime:0.002886s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1 ORDER BY `rate_type` ASC [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_rate` [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_rate` WHERE  `rate_uid` = 404  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000243s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_rate` (`rate_rate` , `rate_close_rate` , `rate_time` , `rate_uid` , `rate_type`) VALUES (0.008 , 1 , 1545285770 , 404 , 1) [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_rate` WHERE  `rate_uid` = 404  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000228s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_rate` (`rate_rate` , `rate_close_rate` , `rate_time` , `rate_uid` , `rate_type`) VALUES (0.006 , 2 , 1545285770 , 404 , 2) [ RunTime:0.000195s ]
+[ sql ] [ SQL ] UPDATE `cc_user_verify`  SET `send_state` = 1 , `send_member` = 404  WHERE  `send_id` IS NULL [ RunTime:0.000166s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:01+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Main/login
+[运行时间：0.079295s] [吞吐率：12.61req/s] [内存消耗：4,318.88kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '15866081838',
+  'password' => '123456',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000340s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_phone` = '15866081838'  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] UPDATE `cc_user`  SET `user_login_time` = 1545285781 , `user_token` = '6796025bba9983a1f0f3331f4594ed6b'  WHERE  `user_id` = 404 [ RunTime:0.005117s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_log` [ RunTime:0.000672s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_log` (`log_uid` , `log_ip` , `log_time`) VALUES (404 , '140.250.240.214' , 1545285781) [ RunTime:0.000240s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:01+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.052619s] [吞吐率：19.00req/s] [内存消耗：4,221.44kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'origin' => 'file://',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'x-requested-with' => 'XMLHttpRequest',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'ios',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:01+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.034481s] [吞吐率：29.00req/s] [内存消耗：4,210.30kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000540s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000660s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:01+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.043096s] [吞吐率：23.20req/s] [内存消耗：4,801.09kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '52',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000333s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 1 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title`,`article_type`,`article_img`,`article_time` FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 0,10 [ RunTime:0.000246s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:01+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.040641s] [吞吐率：24.61req/s] [内存消耗：4,629.53kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000537s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:05+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041408s] [吞吐率：24.15req/s] [内存消耗：4,629.45kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000637s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:05+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/share
+[运行时间：0.039465s] [吞吐率：25.34req/s] [内存消耗：4,623.07kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_id` = 404 LIMIT 1 [ RunTime:0.000608s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:06+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.039777s] [吞吐率：25.14req/s] [内存消耗：4,631.00kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000881s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:11+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.043461s] [吞吐率：23.01req/s] [内存消耗：4,631.00kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000295s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.001738s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:14+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/card_list
+[运行时间：0.047491s] [吞吐率：21.06req/s] [内存消耗：4,625.09kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT `card_id`,`card_uid`,`card_bank_id`,`card_no`,`card_repayment_day`,`list_name`,`list_code`,`list_logo` FROM `cc_user_card` `c` LEFT JOIN `cc_bank_list` `b` ON `b`.`list_id`=`c`.`card_bank_id` WHERE  `card_uid` = 404  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC [ RunTime:0.005270s ]
+[ sql ] [ SQL ] SELECT `card_id`,`card_uid`,`card_bank_id`,`card_no`,`mission_cid`,`mission_money` FROM `cc_user_card` `c` INNER JOIN `cc_mission` `m` ON `m`.`mission_cid`=`c`.`card_id` WHERE  `card_uid` = 404  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC [ RunTime:0.000367s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:27+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Dai_Apply/getBank
+[运行时间：0.833434s] [吞吐率：1.20req/s] [内存消耗：4,420.94kb] [文件加载：85]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 2  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+[ error ] [8]未定义数组索引: oemChannelId[/www/wwwroot/baba/application/bank/controller/DaiZk.php:38]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:29+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Points_Apply/getBank
+[运行时间：0.034082s] [吞吐率：29.34req/s] [内存消耗：2,952.98kb] [文件加载：74]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T14:03:29+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Points_Apply/getBank
+[运行时间：0.022312s] [吞吐率：44.82req/s] [内存消耗：2,382.34kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T14:03:34+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041115s] [吞吐率：24.32req/s] [内存消耗：4,629.53kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000422s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:34+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.038865s] [吞吐率：25.73req/s] [内存消耗：4,619.91kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000215s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:41+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041399s] [吞吐率：24.16req/s] [内存消耗：4,629.53kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000740s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:42+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/Make/index
+[运行时间：0.049638s] [吞吐率：20.15req/s] [内存消耗：4,457.19kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001280s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.002179s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 1 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_mission` WHERE  `mission_uid` = 404  AND `mission_state` = 2 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_pay_records` WHERE  `records_uid` = 404  AND `records_state` = 5 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_fee` = 0  AND `type_state` = 0 ORDER BY `type_sort` ASC [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_pid` = 404  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/baba/application/api/controller/Make.php:197]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:58+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=928519625187000320&page=1&_=1545285837654
+[运行时间：0.458684s] [吞吐率：2.18req/s] [内存消耗：4,374.69kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '928519625187000320',
+  'page' => '1',
+  '_' => '1545285837654',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000501s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:03:59+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=907080006306365441&page=1&_=1545285838794
+[运行时间：0.377115s] [吞吐率：2.65req/s] [内存消耗：4,374.69kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '907080006306365441',
+  'page' => '1',
+  '_' => '1545285838794',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:00+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=928517164074270720&page=1&_=1545285839867
+[运行时间：0.354863s] [吞吐率：2.82req/s] [内存消耗：4,374.69kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '928517164074270720',
+  'page' => '1',
+  '_' => '1545285839867',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000467s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:02+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=907079962610106368&page=1&_=1545285841517
+[运行时间：0.451464s] [吞吐率：2.22req/s] [内存消耗：4,374.73kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '907079962610106368',
+  'page' => '1',
+  '_' => '1545285841517',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001096s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:03+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=1066878421495185409&page=1&_=1545285842617
+[运行时间：0.360672s] [吞吐率：2.77req/s] [内存消耗：4,374.53kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'accept' => '*/*',
+  'accept-language' => 'zh-cn',
+  'connection' => 'keep-alive',
+  'accept-encoding' => 'gzip, deflate',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1066878421495185409',
+  'page' => '1',
+  '_' => '1545285842617',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:18+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/UserRate
+[运行时间：0.058126s] [吞吐率：17.20req/s] [内存消耗：4,612.28kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001062s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001094s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_rate` [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_rate` WHERE  `rate_uid` = 404 [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:21+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.040306s] [吞吐率：24.81req/s] [内存消耗：4,629.45kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:21+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/repayment/membergetchannel
+[运行时间：0.046124s] [吞吐率：21.68req/s] [内存消耗：4,767.98kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001458s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment_channel` [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_channel` WHERE  `channel_use` = 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment` [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_channel_id` = 1  AND `payment_type` = 4  AND `payment_use` = 1 LIMIT 1 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:21+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/Membership
+[运行时间：0.144026s] [吞吐率：6.94req/s] [内存消耗：4,698.20kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000553s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user_type as u INNER JOIN `cc_rate` `r` ON `u`.`type_id`=`r`.`rate_type_id` WHERE  `u`.`type_state` = '0' [ RunTime:0.000405s ]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1449]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1450]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1456]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1449]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1450]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1456]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:25+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041459s] [吞吐率：24.12req/s] [内存消耗：4,629.53kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000343s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:04:25+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.040679s] [吞吐率：24.58req/s] [内存消耗：4,619.91kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'content-length' => '38',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'cache-control' => 'max-age=0',
+  'accept-encoding' => 'gzip, deflate',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000306s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000248s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:27:24+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/Admin/index/home.html
+[运行时间：0.045178s] [吞吐率：22.13req/s] [内存消耗：4,374.48kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_benefit` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_benefit` WHERE  `benefit_type` = 0 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` WHERE  `upgrade_state` = 1 LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000222s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:27:26+08:00 ] 140.250.228.227 GET baba.sdshengyixing.com/Admin/system/index.html
+[运行时间：0.041903s] [吞吐率：23.86req/s] [内存消耗：4,455.53kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=vhs7e2jfprhecbnhrfgk25bda3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/system/index.html [ array (
+  0 => 'menu',
+  1 => 'contrname',
+  2 => 'actionname',
+  3 => 'leftType',
+  4 => 'contractionname',
+  5 => 'config',
+  6 => 'admin',
+  7 => 'usertype',
+  8 => 'agentlist',
+  9 => 'method',
+  10 => 'other',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_state` = 0  AND `type_fee` <> 0 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent` [ RunTime:0.000273s ]
+[ error ] [8]未定义数组索引: DEPOSIT_AGENT_ID[/www/wwwroot/baba/runtime/temp/8be583842b7482a85767d5d1e58be4ed.php:412]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:52+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.039864s] [吞吐率：25.09req/s] [内存消耗：4,629.45kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000444s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000990s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:52+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/share
+[运行时间：0.038742s] [吞吐率：25.81req/s] [内存消耗：4,623.07kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000489s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_id` = 404 LIMIT 1 [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:53+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.040198s] [吞吐率：24.88req/s] [内存消耗：4,631.00kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:55+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.039806s] [吞吐率：25.12req/s] [内存消耗：4,629.45kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000579s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001048s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000504s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:55+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/share
+[运行时间：0.041164s] [吞吐率：24.29req/s] [内存消耗：4,623.07kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000479s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_id` = 404 LIMIT 1 [ RunTime:0.000495s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:28:56+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/real
+[运行时间：0.037854s] [吞吐率：26.42req/s] [内存消耗：4,631.00kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 404  AND `card_type` = 2  AND `card_blocked` = 0 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:15+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.041233s] [吞吐率：24.25req/s] [内存消耗：4,629.45kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000529s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '404' LIMIT 1 [ RunTime:0.000599s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:15+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/my/Membership
+[运行时间：0.039287s] [吞吐率：25.45req/s] [内存消耗：4,699.76kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000478s ]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1449]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1450]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1456]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1449]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1450]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/baba/application/api/controller/My.php:1456]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:15+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/repayment/membergetchannel
+[运行时间：0.043605s] [吞吐率：22.93req/s] [内存消耗：4,767.98kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000925s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment_channel` [ RunTime:0.000635s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_channel` WHERE  `channel_use` = 1 [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment` [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_channel_id` = 1  AND `payment_type` = 4  AND `payment_use` = 1 LIMIT 1 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:25+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/index/shangqiao
+[运行时间：0.037621s] [吞吐率：26.58req/s] [内存消耗：4,310.14kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000513s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000476s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:29+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/hotproblems
+[运行时间：0.038056s] [吞吐率：26.28req/s] [内存消耗：4,612.62kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000385s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title` FROM `cc_article` WHERE  `article_use` = 1 ORDER BY `article_click` DESC LIMIT 10 [ RunTime:0.000253s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:29+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article_type
+[运行时间：0.051848s] [吞吐率：19.29req/s] [内存消耗：4,607.16kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000324s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article_type` [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `type_id`,`type_name` FROM `cc_article_type` [ RunTime:0.009642s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:31+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/article_detail
+[运行时间：0.041535s] [吞吐率：24.08req/s] [内存消耗：4,620.35kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '43',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000453s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title`,`article_body`,`article_type`,`article_img`,`article_time` FROM `cc_article` WHERE  `article_id` = 8 LIMIT 1 [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:31+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Index/Iframe/article?id=8
+[运行时间：0.039916s] [吞吐率：25.05req/s] [内存消耗：4,391.27kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/index/iframe/info.html [ array (
+  0 => 'data',
+  1 => 'title',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000481s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT `article_body` FROM `cc_article` WHERE  `article_id` = 8 LIMIT 1 [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2018-12-20T14:29:37+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/My/getbonus
+[运行时间：0.041636s] [吞吐率：24.02req/s] [内存消耗：4,618.05kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000523s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001152s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_pid` = 404 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `user_id` FROM `cc_user` WHERE  `user_pid` IN (404) [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_bonuslog` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_bonuslog` WHERE  `blog_user` = '404'  AND `blog_state` = 0 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:14+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/
+[运行时间：0.026994s] [吞吐率：37.05req/s] [内存消耗：3,051.13kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://47.75.88.128:8888/site',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/index/index/register.html [ array (
+  0 => 'id',
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:15+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/static/index/js/jquery-1.8.3.min.js
+[运行时间：0.022132s] [吞吐率：45.18req/s] [内存消耗：2,382.20kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T16:30:16+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/static/index/js/jquery-1.8.3.min.js
+[运行时间：0.020277s] [吞吐率：49.32req/s] [内存消耗：2,382.20kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T16:30:17+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login
+[运行时间：0.020759s] [吞吐率：48.17req/s] [内存消耗：2,382.18kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T16:30:17+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login
+[运行时间：0.021924s] [吞吐率：45.61req/s] [内存消耗：2,382.13kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T16:30:19+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.024837s] [吞吐率：40.26req/s] [内存消耗：3,019.24kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:19+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/captcha.html
+[运行时间：0.023750s] [吞吐率：42.11req/s] [内存消耗：2,360.14kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-20T16:30:20+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/static/admin/images/loginsj.png
+[运行时间：0.020848s] [吞吐率：47.97req/s] [内存消耗：2,382.43kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-20T16:30:28+08:00 ] 182.116.236.11 POST baba.sdshengyixing.com/_login_ba
+[运行时间：0.046112s] [吞吐率：21.69req/s] [内存消耗：4,859.31kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://baba.sdshengyixing.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+)
+[ info ] [ PARAM ] array (
+  'login_name' => 'admin',
+  'password' => '123456',
+  'code' => '592',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000498s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] UPDATE `cc_admin`  SET `admin_ip` = '182.116.236.11' , `admin_time` = 1545294628  WHERE  `admin_id` = 16 [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:29+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/index/index.html
+[运行时间：0.042449s] [吞吐率：23.56req/s] [内存消耗：4,338.29kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000427s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:32+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/index/home.html
+[运行时间：0.064354s] [吞吐率：15.54req/s] [内存消耗：4,403.45kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000536s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.015188s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000206s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_benefit` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_benefit` WHERE  `benefit_type` = 0 LIMIT 1 [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` WHERE  `upgrade_state` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000241s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:35+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/user/index.html
+[运行时间：0.047814s] [吞吐率：20.91req/s] [内存消耗：4,657.21kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/user/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'userTypelist',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001124s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` ORDER BY `user_id` DESC LIMIT 0,10 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `user_account` FROM `cc_user` WHERE  `user_id` = 3 LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT `agent_account` FROM `cc_agent` WHERE  `agent_id` = 1 LIMIT 1 [ RunTime:0.000266s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:38+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/payrecords/index.html
+[运行时间：0.043342s] [吞吐率：23.07req/s] [内存消耗：4,588.44kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/payrecords/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'getdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000476s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_records` `pr` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`pr`.`records_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`pr`.`records_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`pr`.`records_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` LIMIT 1 [ RunTime:0.001524s ]
+[ sql ] [ SQL ] SELECT `pr`.*,`u`.*,bank.list_id as back_id,bank.list_name as back_name,`pc`.`channel_name`,`p`.`payment_id`,`p`.`payment_name`,`uc`.`card_id` FROM `cc_pay_records` `pr` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`pr`.`records_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`pr`.`records_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`pr`.`records_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` ORDER BY `records_id` DESC LIMIT 0,10 [ RunTime:0.000561s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:39+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/repayment/index.html
+[运行时间：0.053388s] [吞吐率：18.73req/s] [内存消耗：4,670.28kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/repayment/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'getdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000880s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_mission` `m` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`m`.`mission_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`m`.`mission_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`m`.`mission_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` WHERE  `mission_del` = 0 LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_mission` `m` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`m`.`mission_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`m`.`mission_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`m`.`mission_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` WHERE  `mission_del` = 0 ORDER BY `mission_id` DESC LIMIT 0,14 [ RunTime:0.000708s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:41+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/upgrade/index.html
+[运行时间：0.197689s] [吞吐率：5.06req/s] [内存消耗：4,793.48kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/upgrade/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'listType',
+  8 => 'list',
+  9 => 'getdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000550s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_pay_upgrade` ORDER BY `upgrade_time` DESC LIMIT 0,10 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT SUM(`upgrade_money`) AS tp_sum FROM `cc_pay_upgrade` WHERE  `upgrade_state` IN (2,5,6) LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT SUM(`upgrade_money`) AS tp_sum FROM `cc_pay_upgrade` WHERE  `upgrade_time` BETWEEN 1545235200 AND 1545321600  AND `upgrade_state` IN (2,5,6) LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000882s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2018-12-20T16:30:42+08:00 ] 182.116.236.11 GET baba.sdshengyixing.com/Admin/payrecords/index.html
+[运行时间：0.042363s] [吞吐率：23.61req/s] [内存消耗：4,588.44kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=mdl25u4418kt0ruejh5gb9d1p3',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/payrecords/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'getdata',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000457s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_records` `pr` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`pr`.`records_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`pr`.`records_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`pr`.`records_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT `pr`.*,`u`.*,bank.list_id as back_id,bank.list_name as back_name,`pc`.`channel_name`,`p`.`payment_id`,`p`.`payment_name`,`uc`.`card_id` FROM `cc_pay_records` `pr` LEFT JOIN `cc_user` `u` ON `u`.`user_id`=`pr`.`records_uid` LEFT JOIN `cc_user_card` `uc` ON `uc`.`card_id`=`pr`.`records_cid` LEFT JOIN `cc_bank_list` `bank` ON `bank`.`list_id`=`uc`.`card_bank_id` LEFT JOIN `cc_payment` `p` ON `p`.`payment_id`=`pr`.`records_pay_id` LEFT JOIN `cc_payment_channel` `pc` ON `pc`.`channel_id`=`p`.`payment_channel_id` ORDER BY `records_id` DESC LIMIT 0,10 [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[ 2018-12-20T17:05:40+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/api/trading/presentation
+[运行时间：0.041613s] [吞吐率：24.03req/s] [内存消耗：4,520.33kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'origin' => 'file://',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15F79 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  'token' => '6796025bba9983a1f0f3331f4594ed6b',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000443s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001039s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '6796025bba9983a1f0f3331f4594ed6b' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_presentation` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_presentation` WHERE  `presentation_uid` = 404 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_presentation` WHERE  `presentation_uid` = 404 ORDER BY `presentation_time` DESC LIMIT 0,10 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 POST baba.sdshengyixing.com/api/My/article
+[运行时间：0.054276s] [吞吐率：18.42req/s] [内存消耗：3,289.71kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '20',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+  'type' => '1',
+  'page' => '1',
+)
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 POST baba.sdshengyixing.com/api/Common/version
+[运行时间：0.072151s] [吞吐率：13.86req/s] [内存消耗：4,221.98kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '24',
+  'accept' => '*/*',
+  'origin' => 'file://',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+)
+[ info ] [ PARAM ] array (
+  'os' => 'android',
+  'version' => '1.0.0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000354s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 GET baba.sdshengyixing.com/api/Img/index?type=2
+[运行时间：0.098678s] [吞吐率：10.13req/s] [内存消耗：4,210.14kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000285s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 POST baba.sdshengyixing.com/api/my/index
+[运行时间：0.107377s] [吞吐率：9.31req/s] [内存消耗：3,289.48kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.125400s] [吞吐率：7.97req/s] [内存消耗：3,289.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T17:39:58+08:00 ] 27.195.183.219 POST baba.sdshengyixing.com/api/my/info
+[运行时间：0.108069s] [吞吐率：9.25req/s] [内存消耗：3,289.52kb] [文件加载：72]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '6',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '',
+)
+---------------------------------------------------------------
+[ 2018-12-20T17:39:59+08:00 ] 27.195.183.219 GET baba.sdshengyixing.com/api/Bank_Apply/getBank?_=1545298797148
+[运行时间：0.514015s] [吞吐率：1.95req/s] [内存消耗：4,374.17kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  '_' => '1545298797148',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004156s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000715s ]
+---------------------------------------------------------------
+[ 2018-12-20T17:40:00+08:00 ] 27.195.183.219 GET baba.sdshengyixing.com/api/Bank_Apply/banklist?id=1068077809986961409&page=1&_=1545298798704
+[运行时间：0.311472s] [吞吐率：3.21req/s] [内存消耗：4,375.07kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0.1; MuMu Build/V417IR; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/52.0.2743.100 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.296297)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'en-US',
+  'x-requested-with' => 'com.bbjf.app',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '1068077809986961409',
+  'page' => '1',
+  '_' => '1545298798704',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000788s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000646s ]

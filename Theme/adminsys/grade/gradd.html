@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<script src="__PLUGINS__/jquery-1.9.1.min.js"></script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script src="__MODES__/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="__MODES__/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__MODES__/assets/js/ace-elements.min.js"></script>
+		<script src="__MODES__/assets/js/ace.min.js"></script>
+		<title>新增代理商等级</title>
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<script src="__PLUGINS__/common.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.all.min.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/lang/zh-cn/zh-cn.js"></script>
+	</head>
+	<body>
+		<div class="margin clearfix">
+			<div class="stystems_style">
+				<div class="tabbable">
+					<div class="tab-content">
+						<form name="conp-form" id="conp-form" action="">
+						<div id="home" class="tab-pane active">
+
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>名称： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_name" id="grade_name" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>排序： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_sort" id="grade_sort" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>还款费率： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_rate" id="grade_rate" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>收款费用： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_rate_close" id="grade_rate_close" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>会员升级费率： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_rate_upgrade" id="grade_rate_upgrade" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>承载量： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="grade_capacity" id="grade_capacity" class="col-xs-10">
+								</div>
+							</div>
+
+							<div class="Button_operation">
+								<button onclick="addSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save"></i>&nbsp;保存</button>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function addSubmit () {
+				var url    	= $("#conp-form").attr('action');
+				var name   	= $('#grade_name').val();
+				var sort   	= $('#grade_sort').val();
+				var rate   	= $('#grade_rate').val();
+				var close   = $('#grade_rate_close').val();
+				var upgrade = $('#grade_rate_upgrade').val();
+				var capacit	= $('#grade_capacity').val();
+
+				if(name==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+				if(sort==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+				if(rate==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+				if(close==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+				
+				if(upgrade==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+
+				if(capacit==''){
+					layer.msg('必须填项不可为空');return false;
+				}
+
+				var data   = $("#conp-form").serialize();
+				ajaxPost(url,$("#btn-primary"),data,function (r) {
+		            $("#btn-primary").removeAttr('disabled');
+		           // window.location.href="{:Url('grade/index')}"
+		            window.parent.location.reload();
+		            var index = parent.layer.getFrameIndex(window.name);
+					parent.layer.close(index);
+		        })
+			}
+		</script>
+	</body>
+
+</html>

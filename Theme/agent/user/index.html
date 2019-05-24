@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>代理后台</title>
+</head>
+<style>
+    .pagination { display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 4px; }
+    .pagination li { display: inline; }
+    .pagination li a { position: relative;background-color: #fff; border: 1px solid #ddd; }
+</style>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                  <a href="">首页</a>
+                  <a href="">用户管理</a>
+                  <a><cite>下级用户</cite></a>
+                </span>
+            </div>
+        </div>
+    <div class="layui-content">
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>今日消费金额</span>
+                                </div>
+                                <div class="total">{$todymoney}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>今日分润</span>
+                                </div>
+                                <div class="total">{$todyprofit}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>总交易额</span>
+                                </div>
+                                <div class="total">{$sunmoney}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <span>总分润</span>
+                                </div>
+                                <div class="total">{$sunprofit}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                    <form action="{:Url('agent/user/index')}" id="form">
+                        <div class="layui-form layui-form-item">
+                            <div class="layui-inline">
+                                <div class="layui-form-mid">用户名:</div>
+                                <div class="layui-input-inline" style="width: 100px;">
+                                  <input type="text" autocomplete="off" value="{$account}" name="account" class="layui-input">
+                                </div>
+                                <div class="layui-form-mid">姓名:</div>
+                                <div class="layui-input-inline" style="width: 100px;">
+                                  <input type="text" autocomplete="off" value="{$name}" name="name" class="layui-input">
+                                </div>
+                                <button class="layui-btn layui-btn-blue" id="sub">查询</button>
+                                <button class="layui-btn layui-btn-primary">重置</button>
+                                <a href="javascript:history.go(-1)" class="layui-btn layui-btn-primary">上一步</a>
+                            </div>
+                        </div>
+                    </form>
+                        <button class="layui-btn layui-btn-blue" id="addagent"><i class="layui-icon" >&#xe654;</i>新增代理</button>
+                        <table class="layui-table">
+                          <thead>
+                            <tr>
+                              <th>ID</th>
+                              <th>用户名</th>
+                              <th>推广码</th>
+                              <th>姓名</th>
+                              <th>电话</th>
+                              <th>注册时间</th>
+                              <th>状态</th>
+                              <th>操作</th>
+                              </tr>
+                          </thead>
+                          {volist name="list" id="vo"}
+                          <tbody>
+                            <tr>
+                              <td>{$vo.agent_id}</td>
+                              <td>{$vo.agent_account}</td>
+                              <td>{$vo.agent_code}</td>
+                              <td>{$vo.agent_name}</td>
+                              <td>{$vo.agent_phone}</td>
+                              <td>{$vo.agent_time|date="Y-m-d H:i:s"}</td>
+                              {if $vo.agent_state==1}
+                              <td>冻结</td>
+                              {else}
+                              <td>正常</td>
+                              {/if}
+                              <td class="td-manage">
+                                <a title="查看下级代理"  onclick="next_agent_show({$vo.agent_id})" href="javascript:;">
+                                  <i class="layui-icon">&#xe613;</i>
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a title="查看下级用户"  onclick="next_user_show({$vo.agent_id})" href="javascript:;">
+                                  <i class="layui-icon">&#xe770;</i>
+                                </a>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a title="编辑"  onclick="agent_edit({$vo.agent_id})" href="javascript:;">
+                                  <i class="layui-icon">&#xe642;</i>
+                                </a>
+                              </td>
+                            </tr>
+                          </tbody>
+                          {/volist}
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <div id="page" style="float: right;">
+      <div class="layui-box layui-laypage layui-laypage-default" id="layui-laypage-1">
+        {$list|raw}
+      </div>
+    </div>
+    </div>
+    <script src="__JS__/layui.all.js"></script>
+    <script src="__JS__/layer/layer.js"></script>
+    <script src="__JS__/jquery.min.js"></script>
+    <script>
+    //查看下级代理
+      function next_agent_show(agent_id){
+        window.location.href = "{:Url('agent/user/index')}?pid="+agent_id;
+      }
+    //查看下级客户
+      function next_user_show(agent_id){
+        window.location.href = "{:Url('agent/user/user')}?pid="+agent_id;
+      }
+    //新增代理
+      $("#addagent").click(function(){
+        var url = "{:Url('agent/user/Addagent')}"
+        layer.open({
+          type: 2,
+          skin: 'layui-layer-rim', //加上边框
+          area: ['60%', '60%'], //宽高
+          content: url
+        });
+      })
+      $("#sub").click(function(){
+        $("#form").submit();
+      })
+    //编辑代理信息
+      function agent_edit(agent_id){
+        var url = "{:Url('agent/user/Upagent')}?id="+agent_id;
+        layer.open({
+          type: 2,
+          skin: 'layui-layer-rim', //加上边框
+          area: ['60%', '60%'], //宽高
+          content: url
+        });
+      }
+    </script>
+</body>
+</html>

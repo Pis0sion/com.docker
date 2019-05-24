@@ -1,0 +1,54 @@
+---------------------------------------------------------------
+[ 2019-01-08T05:34:09+08:00 ] 42.228.201.102 POST baba.sdshengyixing.com/api/My/hotproblems
+[运行时间：0.115410s] [吞吐率：8.66req/s] [内存消耗：4,671.24kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G9208 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '762f24a2b1ca636f0b38e4c0816b0c34',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000304s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.002155s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '762f24a2b1ca636f0b38e4c0816b0c34' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.001805s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title` FROM `cc_article` WHERE  `article_use` = 1 ORDER BY `article_click` DESC LIMIT 10 [ RunTime:0.000276s ]
+---------------------------------------------------------------
+[ 2019-01-08T05:34:09+08:00 ] 42.228.201.102 POST baba.sdshengyixing.com/api/My/article_type
+[运行时间：0.115442s] [吞吐率：8.66req/s] [内存消耗：4,665.76kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '38',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 7.0; SM-G9208 Build/NRD90M; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.8',
+  'x-requested-with' => 'com.bbjf.app',
+)
+[ info ] [ PARAM ] array (
+  'token' => '762f24a2b1ca636f0b38e4c0816b0c34',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000352s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.002205s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '762f24a2b1ca636f0b38e4c0816b0c34' LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article_type` [ RunTime:0.001839s ]
+[ sql ] [ SQL ] SELECT `type_id`,`type_name` FROM `cc_article_type` [ RunTime:0.016083s ]

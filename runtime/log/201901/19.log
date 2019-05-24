@@ -1,0 +1,3314 @@
+---------------------------------------------------------------
+[ 2019-01-19T09:49:46+08:00 ] 140.250.239.241 GET app.babadao.com/_login_ba
+[运行时间：0.026894s] [吞吐率：37.18req/s] [内存消耗：3,056.48kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098',
+)
+[ info ] [ PARAM ] array (
+  '/_login_ba' => '',
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2019-01-19T09:49:47+08:00 ] 140.250.239.241 GET app.babadao.com/captcha.html
+[运行时间：0.023232s] [吞吐率：43.04req/s] [内存消耗：2,393.43kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098; PHPSESSID=d122j85rab75msclr63dqr0go2',
+)
+[ info ] [ PARAM ] array (
+  '/captcha_html' => '',
+)
+---------------------------------------------------------------
+[ 2019-01-19T09:49:47+08:00 ] 140.250.239.241 GET app.babadao.com/static/admin/images/loginsj.png
+[运行时间：0.025321s] [吞吐率：39.49req/s] [内存消耗：2,415.57kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2019-01-19T09:49:57+08:00 ] 140.250.239.241 POST app.babadao.com/_login_ba
+[运行时间：0.038883s] [吞吐率：25.72req/s] [内存消耗：4,896.05kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862661',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '41',
+)
+[ info ] [ PARAM ] array (
+  '/_login_ba' => '',
+  'login_name' => 'admin',
+  'password' => '123456',
+  'code' => '505',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000488s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] UPDATE `cc_admin`  SET `admin_ip` = '140.250.239.241' , `admin_time` = 1547862597  WHERE  `admin_id` = 16 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:49:58+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/index/index.html
+[运行时间：0.060738s] [吞吐率：16.46req/s] [内存消耗：4,393.67kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862661',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/index/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'tongzhi',
+  7 => 'tongzhi_count',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000332s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000934s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_mission` WHERE  `mission_state` = 1  AND `mission_type` = 1  AND `mission_del` = 0 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:49:59+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/index/home.html
+[运行时间：0.045727s] [吞吐率：21.87req/s] [内存消耗：4,443.39kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862661',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/index/home_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_benefit` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_benefit` WHERE  `benefit_type` = 0 LIMIT 1 [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` WHERE  `upgrade_state` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 8 LIMIT 1 [ RunTime:0.000270s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:50:46+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.068184s] [吞吐率：14.67req/s] [内存消耗：4,623.79kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862673',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000460s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:50:47+08:00 ] 101.91.62.99 GET app.babadao.com/_login_ba
+[运行时间：0.024676s] [吞吐率：40.53req/s] [内存消耗：3,055.65kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko',
+  'accept' => '*/*',
+  'referer' => 'blank',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/_login_ba' => '',
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2019-01-19T09:50:55+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=1
+[运行时间：0.056766s] [吞吐率：17.62req/s] [内存消耗：4,426.05kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862720',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:50:58+08:00 ] 61.151.178.217 GET app.babadao.com/Admin/index/index.html
+[运行时间：0.025888s] [吞吐率：38.63req/s] [内存消耗：3,128.13kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.124 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'blank',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/index/index_html' => '',
+)
+[ info ] [ VIEW ] /www/wwwroot/huanka/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:03+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=1
+[运行时间：0.058080s] [吞吐率：17.22req/s] [内存消耗：4,349.24kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862729',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '124',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '1',
+  'type_name' => '银牌会员',
+  'type_fee' => '88',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '1',
+  'type_profit' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000410s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = '银牌会员' , `type_fee` = 88 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 1 , `type_profit` = 0  WHERE  `type_id` = 1 [ RunTime:0.000408s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:04+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.065244s] [吞吐率：15.33req/s] [内存消耗：4,623.60kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862729',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000404s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:05+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/add.html
+[运行时间：0.037641s] [吞吐率：26.57req/s] [内存消耗：4,488.28kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862738',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/add_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/add.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000471s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000377s ]
+[ error ] [8]未定义变量: list[/www/wwwroot/huanka/runtime/temp/48ceea99b080c237a210de1ddd0eafb1.php:94]
+[ error ] [8]未定义变量: list[/www/wwwroot/huanka/runtime/temp/48ceea99b080c237a210de1ddd0eafb1.php:95]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:32+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/add.html
+[运行时间：0.035896s] [吞吐率：27.86req/s] [内存消耗：4,346.14kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/add.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862739',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '119',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/add_html' => '',
+  'type_name' => '普通会员',
+  'type_fee' => '0',
+  'type_free_count' => '0',
+  'type_free_amount' => '0',
+  'type_sort' => '',
+  'type_profit' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000439s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_type` (`type_name` , `type_fee` , `type_free_count` , `type_free_amount` , `type_sort` , `type_profit`) VALUES ('普通会员' , 0 , 0 , 0 , 0 , 0) [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:33+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.049005s] [吞吐率：20.41req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862739',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000426s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000731s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:38+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=2
+[运行时间：0.056856s] [吞吐率：17.59req/s] [内存消耗：4,426.09kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862767',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000370s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000354s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:43+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=2
+[运行时间：0.035911s] [吞吐率：27.85req/s] [内存消耗：4,349.31kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862772',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '113',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '2',
+  'type_name' => 'VIP会员',
+  'type_fee' => '588.00',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '3',
+  'type_profit' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000437s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = 'VIP会员' , `type_fee` = 588 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 3 , `type_profit` = 1  WHERE  `type_id` = 2 [ RunTime:0.000379s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:44+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.063597s] [吞吐率：15.72req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862772',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000456s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:46+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=1
+[运行时间：0.038072s] [吞吐率：26.27req/s] [内存消耗：4,425.82kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862778',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000491s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:47+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.044015s] [吞吐率：22.72req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862780',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:50+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=2
+[运行时间：0.055582s] [吞吐率：17.99req/s] [内存消耗：4,426.09kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862782',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000264s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:59+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=2
+[运行时间：0.035549s] [吞吐率：28.13req/s] [内存消耗：4,349.35kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862785',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '128',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '2',
+  'type_name' => '金牌会员',
+  'type_fee' => '588.00',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '3',
+  'type_profit' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000414s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = '金牌会员' , `type_fee` = 588 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 3 , `type_profit` = 1  WHERE  `type_id` = 2 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:51:59+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043872s] [吞吐率：22.79req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862785',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000436s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:04+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=10
+[运行时间：0.058593s] [吞吐率：17.07req/s] [内存消耗：4,425.85kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862794',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000347s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000352s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:08+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=10
+[运行时间：0.036249s] [吞吐率：27.59req/s] [内存消耗：4,349.16kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862798',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '126',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '10',
+  'type_name' => '普通会员',
+  'type_fee' => '0.00',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '0',
+  'type_profit' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = '普通会员' , `type_fee` = 0 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 0 , `type_profit` = 0  WHERE  `type_id` = 10 [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:08+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043656s] [吞吐率：22.91req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862798',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:51+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=10
+[运行时间：0.057893s] [吞吐率：17.27req/s] [内存消耗：4,425.85kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862803',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000424s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:54+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.053935s] [吞吐率：18.54req/s] [内存消耗：4,626.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862845',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000383s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:55+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=10
+[运行时间：0.039455s] [吞吐率：25.35req/s] [内存消耗：4,589.60kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862848',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 10 LIMIT 1 [ RunTime:0.000293s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:57+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.068979s] [吞吐率：14.50req/s] [内存消耗：4,626.80kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862849',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001023s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:52:58+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/add.html?id=10
+[运行时间：0.036265s] [吞吐率：27.57req/s] [内存消耗：4,407.52kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862851',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/add_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/add.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'user_type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:27+08:00 ] 140.250.239.241 POST app.babadao.com/Admin/rate/add.html?id=10
+[运行时间：0.059242s] [吞吐率：16.88req/s] [内存消耗：4,332.27kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/Admin/rate/add.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862852',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '42',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/add_html' => '',
+  'id' => '10',
+  'type_id' => '10',
+  'rate' => '0.0075',
+  'close_rate' => '1',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001008s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] INSERT INTO `cc_rate` (`rate_type_id` , `rate_rate` , `rate_close_rate` , `rate_type` , `rate_time`) VALUES (10 , 0.0075 , 1 , 1 , 1547862807) [ RunTime:0.000373s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:28+08:00 ] 140.250.239.241 GET app.babadao.com/admin/rate/index.html?type_id=10
+[运行时间：0.039463s] [吞吐率：25.34req/s] [内存消耗：4,595.66kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/rate/add.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862852',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/index_html' => '',
+  'type_id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 10 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000296s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:32+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.055679s] [吞吐率：17.96req/s] [内存消耗：4,626.81kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862882',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000409s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:34+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/add.html?id=10
+[运行时间：0.035962s] [吞吐率：27.81req/s] [内存消耗：4,407.52kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862886',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/add_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/add.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'user_type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:43+08:00 ] 140.250.239.241 POST app.babadao.com/Admin/rate/add.html?id=10
+[运行时间：0.037036s] [吞吐率：27.00req/s] [内存消耗：4,332.27kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/Admin/rate/add.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862888',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '42',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/add_html' => '',
+  'id' => '10',
+  'type_id' => '10',
+  'rate' => '0.0062',
+  'close_rate' => '2',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000401s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] INSERT INTO `cc_rate` (`rate_type_id` , `rate_rate` , `rate_close_rate` , `rate_type` , `rate_time`) VALUES (10 , 0.0062 , 2 , 2 , 1547862823) [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:43+08:00 ] 140.250.239.241 GET app.babadao.com/admin/rate/index.html?type_id=10
+[运行时间：0.059616s] [吞吐率：16.77req/s] [内存消耗：4,594.06kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/rate/add.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862888',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/index_html' => '',
+  'type_id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 10 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:46+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043600s] [吞吐率：22.94req/s] [内存消耗：4,626.69kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862898',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000440s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000305s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:54+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=1
+[运行时间：0.061117s] [吞吐率：16.36req/s] [内存消耗：4,597.15kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862900',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000430s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000978s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000289s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:53:56+08:00 ] 140.250.239.241 GET app.babadao.com/admin/rate/edit.html?id=2
+[运行时间：0.056963s] [吞吐率：17.56req/s] [内存消耗：4,326.36kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862908',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'user_type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000338s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 2 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:00+08:00 ] 140.250.239.241 POST app.babadao.com/admin/rate/edit.html?id=2
+[运行时间：0.238852s] [吞吐率：4.19req/s] [内存消耗：4,961.67kb] [文件加载：84]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/rate/edit.html?id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862910',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '33',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '2',
+  'rate' => '0.007',
+  'close_rate' => '1.00',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000975s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 2 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] UPDATE `cc_rate`  SET `rate_rate` = 0.007 , `rate_close_rate` = 1 , `rate_type` = 1  WHERE  `rate_id` = 2 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_pid`,`user_type_id` FROM `cc_user` WHERE  `user_type_id` = 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_rate` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] UPDATE `cc_user_rate`  SET `rate_rate` = 0.007 , `rate_close_rate` = 1  WHERE  `rate_uid` = 408  AND `rate_type` = 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment_user` [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_user` WHERE  `user_uid` = 408  AND `user_type` = 1  AND `user_state` = 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment` [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `payment_controller` FROM `cc_payment` WHERE  `payment_id` = 2 LIMIT 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `payment_controller` FROM `cc_payment` WHERE  `payment_id` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_user` WHERE  `user_pay_id` = 1  AND `user_uid` = 408  AND `user_type` = 1 LIMIT 1 [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_id` = 408  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_rate` WHERE  `rate_uid` = 408  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_rate` WHERE  `rate_uid` = 408  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 408  AND `card_type` = 2 LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] UPDATE `cc_user_rate`  SET `rate_rate` = 0.007 , `rate_close_rate` = 1  WHERE  `rate_uid` = 409  AND `rate_type` = 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_user` WHERE  `user_uid` = 409  AND `user_type` = 1  AND `user_state` = 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] UPDATE `cc_user_rate`  SET `rate_rate` = 0.007 , `rate_close_rate` = 1  WHERE  `rate_uid` = 410  AND `rate_type` = 1 [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_user` WHERE  `user_uid` = 410  AND `user_type` = 1  AND `user_state` = 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] UPDATE `cc_user_rate`  SET `rate_rate` = 0.007 , `rate_close_rate` = 1  WHERE  `rate_uid` = 411  AND `rate_type` = 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_user` WHERE  `user_uid` = 411  AND `user_type` = 1  AND `user_state` = 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:00+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=1
+[运行时间：0.038468s] [吞吐率：26.00req/s] [内存消耗：4,593.87kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/rate/index.html?type_id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862910',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000419s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 1 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:02+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.065638s] [吞吐率：15.24req/s] [内存消耗：4,626.66kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862914',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000299s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:05+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=2
+[运行时间：0.052740s] [吞吐率：18.96req/s] [内存消耗：4,597.15kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862916',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000460s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 2 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000336s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:07+08:00 ] 140.250.239.241 GET app.babadao.com/admin/rate/edit.html?id=4
+[运行时间：0.036383s] [吞吐率：27.49req/s] [内存消耗：4,326.36kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862920',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '4',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'user_type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 4 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 2 LIMIT 1 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:12+08:00 ] 140.250.239.241 POST app.babadao.com/admin/rate/edit.html?id=4
+[运行时间：0.036941s] [吞吐率：27.07req/s] [内存消耗：4,344.81kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/rate/edit.html?id=4',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862921',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '34',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '4',
+  'rate' => '0.0068',
+  'close_rate' => '1.00',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000442s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 4 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] UPDATE `cc_rate`  SET `rate_rate` = 0.0068 , `rate_close_rate` = 1 , `rate_type` = 1  WHERE  `rate_id` = 4 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_pid`,`user_type_id` FROM `cc_user` WHERE  `user_type_id` = 2 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:13+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=2
+[运行时间：0.041654s] [吞吐率：24.01req/s] [内存消耗：4,593.87kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/rate/index.html?type_id=2',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862921',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000372s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 2 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:14+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043742s] [吞吐率：22.86req/s] [内存消耗：4,626.69kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862927',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:18+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=8
+[运行时间：0.035749s] [吞吐率：27.97req/s] [内存消耗：4,426.08kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862928',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000446s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 8 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:21+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043380s] [吞吐率：23.05req/s] [内存消耗：4,626.53kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862932',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:22+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=8
+[运行时间：0.060955s] [吞吐率：16.41req/s] [内存消耗：4,597.16kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862935',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000792s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 8 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 8 LIMIT 1 [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:23+08:00 ] 140.250.239.241 GET app.babadao.com/admin/rate/edit.html?id=15
+[运行时间：0.036425s] [吞吐率：27.45req/s] [内存消耗：4,326.36kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862936',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '15',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+  7 => 'user_type',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 15 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 8 LIMIT 1 [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:28+08:00 ] 140.250.239.241 POST app.babadao.com/admin/rate/edit.html?id=15
+[运行时间：0.039215s] [吞吐率：25.50req/s] [内存消耗：4,344.88kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/rate/edit.html?id=15',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862938',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '33',
+)
+[ info ] [ PARAM ] array (
+  '/admin/rate/edit_html' => '',
+  'id' => '15',
+  'rate' => '0.006',
+  'close_rate' => '1.00',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000447s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_id` = 15 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] UPDATE `cc_rate`  SET `rate_rate` = 0.006 , `rate_close_rate` = 1 , `rate_type` = 1  WHERE  `rate_id` = 15 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `user_id`,`user_pid`,`user_type_id` FROM `cc_user` WHERE  `user_type_id` = 8 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:28+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/rate/index.html?type_id=8
+[运行时间：0.038342s] [吞吐率：26.08req/s] [内存消耗：4,593.88kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/rate/index.html?type_id=8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862938',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/rate/index_html' => '',
+  'type_id' => '8',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/rate/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000421s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_rate` WHERE  `rate_type_id` = 8 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8 ORDER BY `rate_type` ASC,`rate_id` DESC LIMIT 0,10 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2019-01-19T09:54:29+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043127s] [吞吐率：23.19req/s] [内存消耗：4,626.66kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862942',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:24+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=10
+[运行时间：0.035629s] [吞吐率：28.07req/s] [内存消耗：4,425.85kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547862944',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '10',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000428s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:31+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=10
+[运行时间：0.042262s] [吞吐率：23.66req/s] [内存消耗：4,349.16kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=10',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863779',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '126',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '10',
+  'type_name' => '临时会员',
+  'type_fee' => '0.00',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '0',
+  'type_profit' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000432s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.001003s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 10 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = '临时会员' , `type_fee` = 0 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 0 , `type_profit` = 0  WHERE  `type_id` = 10 [ RunTime:0.000433s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:31+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043948s] [吞吐率：22.75req/s] [内存消耗：4,626.53kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863779',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:38+08:00 ] 140.250.239.241 GET app.babadao.com/admin/usertype/edit.html?id=1
+[运行时间：0.035580s] [吞吐率：28.11req/s] [内存消耗：4,426.09kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863786',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/edit.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000725s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:43+08:00 ] 140.250.239.241 POST app.babadao.com/admin/usertype/edit.html?id=1
+[运行时间：0.035890s] [吞吐率：27.86req/s] [内存消耗：4,349.13kb] [文件加载：81]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://app.babadao.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'referer' => 'http://app.babadao.com/admin/usertype/edit.html?id=1',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863793',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '127',
+)
+[ info ] [ PARAM ] array (
+  '/admin/usertype/edit_html' => '',
+  'id' => '1',
+  'type_name' => '普通会员',
+  'type_fee' => '88.00',
+  'type_free_count' => '0',
+  'type_free_amount' => '0.00',
+  'type_sort' => '1',
+  'type_profit' => '0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000407s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] UPDATE `cc_user_type`  SET `type_name` = '普通会员' , `type_fee` = 88 , `type_free_count` = 0 , `type_free_amount` = 0 , `type_sort` = 1 , `type_profit` = 0  WHERE  `type_id` = 1 [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:08:43+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/usertype/index.html
+[运行时间：0.043065s] [吞吐率：23.22req/s] [内存消耗：4,626.53kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/Admin/usertype/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863793',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/usertype/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/usertype/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_type` LIMIT 1 [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` ORDER BY `type_id` DESC LIMIT 0,10 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 8  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 2  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 1  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 POST app.babadao.com/api/Common/version
+[运行时间：0.193523s] [吞吐率：5.17req/s] [内存消耗：4,256.00kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'origin' => 'file://',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '24',
+)
+[ info ] [ PARAM ] array (
+  '/api/Common/version' => '',
+  'os' => 'android',
+  'version' => '1.0.2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010422s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000781s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 GET app.babadao.com/api/Img/index?type=2
+[运行时间：0.204824s] [吞吐率：4.88req/s] [内存消耗：4,244.00kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  '/api/Img/index' => '',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000309s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.010512s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 POST app.babadao.com/api/Message/getnumber
+[运行时间：0.215451s] [吞吐率：4.64req/s] [内存消耗：4,287.80kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/Message/getnumber' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004881s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001123s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 POST app.babadao.com/api/My/article
+[运行时间：0.211415s] [吞吐率：4.73req/s] [内存消耗：4,626.70kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/api/My/article' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000272s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.002295s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.202668s] [吞吐率：4.93req/s] [内存消耗：4,626.30kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004122s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.001213s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:02+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.211352s] [吞吐率：4.73req/s] [内存消耗：4,626.30kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000326s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000543s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:03+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.068811s] [吞吐率：14.53req/s] [内存消耗：4,626.30kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000441s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001194s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:03+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/index
+[运行时间：0.089337s] [吞吐率：11.19req/s] [内存消耗：4,625.79kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/index' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000391s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001185s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:03+08:00 ] 140.250.239.241 GET app.babadao.com/api/Bank_Apply/getBank?_=1547863982501
+[运行时间：0.554030s] [吞吐率：1.80req/s] [内存消耗：4,407.71kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  '/api/Bank_Apply/getBank' => '',
+  '_' => '1547863982501',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006692s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.007643s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:13:03+08:00 ] 140.250.239.241 GET app.babadao.com/api/Bank_Apply/banklist?id=928519625187000320&page=1&_=1547863983460
+[运行时间：0.507453s] [吞吐率：1.97req/s] [内存消耗：4,408.58kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+)
+[ info ] [ PARAM ] array (
+  '/api/Bank_Apply/banklist' => '',
+  'id' => '928519625187000320',
+  'page' => '1',
+  '_' => '1547863983460',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000374s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000412s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:41+08:00 ] 140.250.239.241 POST app.babadao.com/api/repayment/membergetchannel
+[运行时间：0.054468s] [吞吐率：18.36req/s] [内存消耗：4,629.56kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/repayment/membergetchannel' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001254s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:41+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.086431s] [吞吐率：11.57req/s] [内存消耗：4,626.30kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000449s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001195s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000569s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:41+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/Membership
+[运行时间：0.078398s] [吞吐率：12.76req/s] [内存消耗：4,625.78kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/Membership' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000344s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000435s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:46+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.051475s] [吞吐率：19.43req/s] [内存消耗：4,626.30kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000438s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001197s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000547s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:46+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/index
+[运行时间：0.048902s] [吞吐率：20.45req/s] [内存消耗：4,626.05kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/index' => '',
+  'token' => 'eb1a9fc62096ce65d02c2a65dabdaca0',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000338s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = 'eb1a9fc62096ce65d02c2a65dabdaca0' LIMIT 1 [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:57+08:00 ] 140.250.239.241 POST app.babadao.com/api/Main/login
+[运行时间：0.037983s] [吞吐率：26.33req/s] [内存消耗：4,354.70kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '40',
+)
+[ info ] [ PARAM ] array (
+  '/api/Main/login' => '',
+  'phone' => '15563746366',
+  'password' => '123456',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000411s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_phone` = '15563746366'  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] UPDATE `cc_user`  SET `user_login_time` = 1547864157 , `user_token` = '9e724e7721ee874dece851d347adf372'  WHERE  `user_id` = 409 [ RunTime:0.003090s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_log` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] INSERT INTO `cc_user_log` (`log_uid` , `log_ip` , `log_time`) VALUES (409 , '140.250.239.241' , 1547864157) [ RunTime:0.000302s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:58+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.050817s] [吞吐率：19.68req/s] [内存消耗：4,688.70kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => '9e724e7721ee874dece851d347adf372',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000454s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001213s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '9e724e7721ee874dece851d347adf372' LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '409' LIMIT 1 [ RunTime:0.000572s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:58+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/index
+[运行时间：0.050530s] [吞吐率：19.79req/s] [内存消耗：4,678.45kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/index' => '',
+  'token' => '9e724e7721ee874dece851d347adf372',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000425s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '9e724e7721ee874dece851d347adf372' LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 409  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:59+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/info
+[运行时间：0.138915s] [吞吐率：7.20req/s] [内存消耗：4,688.70kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => '9e724e7721ee874dece851d347adf372',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003998s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001261s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '9e724e7721ee874dece851d347adf372' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '409' LIMIT 1 [ RunTime:0.000553s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:59+08:00 ] 140.250.239.241 POST app.babadao.com/api/repayment/membergetchannel
+[运行时间：0.134717s] [吞吐率：7.42req/s] [内存消耗：4,714.52kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/repayment/membergetchannel' => '',
+  'token' => '9e724e7721ee874dece851d347adf372',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003205s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000979s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '9e724e7721ee874dece851d347adf372' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment_channel` [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment_channel` WHERE  `channel_use` = 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_payment` [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_channel_id` = 1  AND `payment_type` = 4  AND `payment_use` = 1 LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_channel_id` = 2  AND `payment_type` = 4  AND `payment_use` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_payment` WHERE  `payment_channel_id` = 3  AND `payment_type` = 4  AND `payment_use` = 1 LIMIT 1 [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2019-01-19T10:15:59+08:00 ] 140.250.239.241 POST app.babadao.com/api/my/Membership
+[运行时间：0.141980s] [吞吐率：7.04req/s] [内存消耗：4,764.04kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'file://',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 8.0.0; HWI-AL00 Build/HUAWEIHWI-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/68.0.3440.91 Mobile Safari/537.36 Html5Plus/1.0 (Immersed/24.0)',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'x-requested-with' => 'io.dcloud.HBuilder',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/Membership' => '',
+  'token' => '9e724e7721ee874dece851d347adf372',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.005051s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '9e724e7721ee874dece851d347adf372' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.001926s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user_type as u INNER JOIN `cc_rate` `r` ON `u`.`type_id`=`r`.`rate_type_id` WHERE  `u`.`type_state` = '0' [ RunTime:0.000456s ]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1453]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1514]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1541]
+[ error ] [8]未定义数组索引: rate_type[/www/wwwroot/huanka/application/api/controller/My.php:1574]
+[ error ] [8]未定义数组索引: rate_type[/www/wwwroot/huanka/application/api/controller/My.php:1578]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1452]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1453]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1514]
+[ error ] [8]未定义变量: val[/www/wwwroot/huanka/application/api/controller/My.php:1541]
+[ error ] [8]未定义数组索引: rate_type[/www/wwwroot/huanka/application/api/controller/My.php:1574]
+[ error ] [8]未定义数组索引: rate_type[/www/wwwroot/huanka/application/api/controller/My.php:1578]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:24+08:00 ] 223.104.107.129 POST app.babadao.com/api/Common/version
+[运行时间：0.034299s] [吞吐率：29.16req/s] [内存消耗：4,256.38kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'x-requested-with' => 'XMLHttpRequest',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'content-length' => '20',
+)
+[ info ] [ PARAM ] array (
+  '/api/Common/version' => '',
+  'os' => 'ios',
+  'version' => '1.0.1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000483s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_app_versions` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_app_versions` ORDER BY `app_id` DESC LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 GET app.babadao.com/api/Img/index?type=2
+[运行时间：0.089429s] [吞吐率：11.18req/s] [内存消耗：4,244.15kb] [文件加载：78]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/api/Img/index' => '',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008314s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_img` [ RunTime:0.001015s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_img` WHERE  `img_start_switch` = 1  AND `img_type` = 2 ORDER BY `img_sort` ASC [ RunTime:0.000463s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/Message/getnumber
+[运行时间：0.096946s] [吞吐率：10.32req/s] [内存消耗：4,331.54kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/Message/getnumber' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003379s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_message` [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_message` WHERE  `message_uid` = 408  AND `message_read` = 0 LIMIT 1 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/my/info
+[运行时间：0.093498s] [吞吐率：10.70req/s] [内存消耗：4,688.70kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000267s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '408' LIMIT 1 [ RunTime:0.000514s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/My/article
+[运行时间：0.109352s] [吞吐率：9.14req/s] [内存消耗：4,860.08kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '52',
+)
+[ info ] [ PARAM ] array (
+  '/api/My/article' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+  'type' => '1',
+  'page' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000281s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_article` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `article_id`,`article_title`,`article_type`,`article_img`,`article_time` FROM `cc_article` WHERE  `article_type` = 1  AND `article_use` = 1 LIMIT 0,10 [ RunTime:0.000298s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/my/index
+[运行时间：0.110736s] [吞吐率：9.03req/s] [内存消耗：4,678.91kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/index' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005823s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000977s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user_card` WHERE  `card_uid` = 408  AND `card_type` = 1  AND `card_blocked` = 0 ORDER BY `card_state` DESC LIMIT 1 [ RunTime:0.000372s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/my/info
+[运行时间：0.116020s] [吞吐率：8.62req/s] [内存消耗：4,688.70kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003176s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000909s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '408' LIMIT 1 [ RunTime:0.000458s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 POST app.babadao.com/api/my/info
+[运行时间：0.120045s] [吞吐率：8.33req/s] [内存消耗：4,688.70kb] [文件加载：80]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/my/info' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000263s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.002014s ]
+[ sql ] [ SQL ] SELECT * FROM cc_user as u INNER JOIN `cc_user_type` `t` ON `u`.`user_type_id`=`t`.`type_id` WHERE  `u`.`user_id` = '408' LIMIT 1 [ RunTime:0.000549s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:25+08:00 ] 223.104.107.129 GET app.babadao.com/api/Bank_Apply/getBank?_=1547870905399
+[运行时间：0.401426s] [吞吐率：2.49req/s] [内存消耗：4,407.25kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'accept' => '*/*',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/api/Bank_Apply/getBank' => '',
+  '_' => '1547870905399',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001946s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.001031s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000444s ]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:26+08:00 ] 223.104.107.129 POST app.babadao.com/api/Make/index
+[运行时间：0.042551s] [吞吐率：23.50req/s] [内存消耗：4,492.42kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'origin' => 'file://',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'content-length' => '38',
+)
+[ info ] [ PARAM ] array (
+  '/api/Make/index' => '',
+  'token' => '0a31b3f0e003eb4663c50ea860a2646f',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_token` = '0a31b3f0e003eb4663c50ea860a2646f' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_card` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_card` WHERE  `card_uid` = 408  AND `card_type` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_mission` [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_mission` WHERE  `mission_uid` = 408  AND `mission_state` = 2 LIMIT 1 [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_records` [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_pay_records` WHERE  `records_uid` = 408  AND `records_state` = 5 LIMIT 1 [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_fee` = 0  AND `type_state` = 0 ORDER BY `type_sort` ASC [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_pid` = 408  AND `user_state` = 0 LIMIT 1 [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_rate` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 1 LIMIT 1 [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_rate` WHERE  `rate_type_id` = 10  AND `rate_type` = 2 LIMIT 1 [ RunTime:0.000306s ]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/huanka/application/api/controller/Make.php:197]
+[ error ] [8]未定义数组下标: 4[/www/wwwroot/huanka/application/api/controller/Make.php:197]
+---------------------------------------------------------------
+[ 2019-01-19T12:08:27+08:00 ] 223.104.107.129 GET app.babadao.com/api/Bank_Apply/banklist?id=928519625187000320&page=1&_=1547870906006
+[运行时间：1.311620s] [吞吐率：0.76req/s] [内存消耗：4,408.35kb] [文件加载：82]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'accept' => '*/*',
+  'cookie' => 'Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547633027',
+  'user-agent' => 'Mozilla/5.0 (iPhone; CPU iPhone OS 12_1_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/16C101 Html5Plus/1.0 (Immersed/20)',
+  'accept-language' => 'zh-cn',
+  'accept-encoding' => 'gzip, deflate',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/api/Bank_Apply/banklist' => '',
+  'id' => '928519625187000320',
+  'page' => '1',
+  '_' => '1547870906006',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000390s ] mysql:host=127.0.0.1;port=3306;dbname=babadaohk;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_bank_apply` [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_bank_apply` WHERE  `apply_type` = 1  AND `apply_use` = 1 LIMIT 1 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2019-01-19T17:38:14+08:00 ] 140.250.239.241 GET app.babadao.com/Admin/index/index.html
+[运行时间：0.025841s] [吞吐率：38.70req/s] [内存消耗：3,129.52kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.26 Safari/537.36 Core/1.63.6788.400 QQBrowser/10.3.2843.400',
+  'upgrade-insecure-requests' => '1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://app.babadao.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=d122j85rab75msclr63dqr0go2; Hm_lvt_eb4073c51838ac84ef6048bff63869ca=1547628098,1547862661; Hm_lpvt_eb4073c51838ac84ef6048bff63869ca=1547863797',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/index/index_html' => '',
+)
+[ info ] [ VIEW ] /www/wwwroot/huanka/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2019-01-19T17:39:13+08:00 ] 61.151.207.141 GET app.babadao.com/Admin/index/index.html
+[运行时间：0.025534s] [吞吐率：39.16req/s] [内存消耗：3,128.23kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; Trident/7.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; Media Center PC 6.0; .NET4.0C; .NET4.0E; InfoPath.3; rv:11.0) like Gecko',
+  'accept' => '*/*',
+  'referer' => 'blank',
+  'accept-language' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4',
+  'host' => 'app.babadao.com',
+  'connection' => 'keep-alive',
+)
+[ info ] [ PARAM ] array (
+  '/Admin/index/index_html' => '',
+)
+[ info ] [ VIEW ] /www/wwwroot/huanka/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+---------------------------------------------------------------
+[ 2019-01-19T21:29:31+08:00 ] 117.132.183.17 GET app.babadao.com/
+[运行时间：0.026700s] [吞吐率：37.45req/s] [内存消耗：3,084.48kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/huanka/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.104 Safari/537.36',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'host' => 'app.babadao.com',
+  'accept' => 'text/html, image/gif, image/jpeg, *; q=.2, */*; q=.2',
+  'connection' => 'keep-alive',
+  'cookie' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/index/index/register.html [ array (
+  0 => 'id',
+) ]

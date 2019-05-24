@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>jQuery多级复选框选中代码 - 站长素材</title>
+
+<link href="__CSS__/bootstrap.min.css" rel="stylesheet" />
+<style>
+/*public*/
+.all-checkbox {
+	padding: 10px;
+}
+.borderTop {
+	border-top: thin solid #ddd;
+}
+.borderBottom {
+	border-bottom: thin solid #ddd;
+}
+.borderLeft {
+	border-left: thin solid #ddd;
+}
+.borderRight {
+	border-right: thin solid #ddd;
+}
+.borderNone {
+	border-right: none;
+}
+.ui-checkbox {
+	background: url("__IMAGES__/download.png");
+	background-repeat: no-repeat;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: inline-block;
+}
+.ui-checkbox.hover {
+	background-position-x: -24px;
+	cursor: pointer;
+}
+.ui-checkbox.active-path {
+	background-position-x: -48px;
+	cursor: pointer;
+}
+.ui-checkbox.active {
+	background-position-x: -72px;
+	cursor: pointer;
+}
+.ui-checkbox.disabled, .ui-checkbox.readonly {
+	background-position-x: -120px;
+	cursor: no-drop;
+}
+.div-checkbox {
+	width: 100%;
+	height: 50px;
+	position: relative;
+	border-left: thin solid #ddd;
+	border-right: thin solid #ddd;
+}
+.div-checkbox label input[type=checkbox] {
+	margin-right: 2px;
+	position: relative;
+	top: 2px;
+	left: 0;
+	display: none;
+}
+.all-checked {
+	padding-left: 25px;
+	font-weight: normal;
+	position: relative;
+	cursor: pointer;
+}
+.all-checked input[type=checkbox] {
+	display: none;
+}
+.div-checkbox label {
+	margin: 0px;
+	padding-left: 25px;
+	cursor: pointer;
+	font-weight: normal;
+	position: relative;
+}
+/* horizontal*/
+.title {
+	overflow: hidden;
+	text-align: center;
+	border-top: thin solid #ddd;
+}
+/*  .title div{
+    font-weight: bolder;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-right:thin solid #ddd;
+  }*/
+.div-checkbox:nth-of-type(odd) {
+	background-color: #f9f9f9;
+}
+.div-checkbox:last-child {
+	border-bottom: thin solid #ddd;
+}
+._border_ {
+	border-top: thin solid #ddd;
+	border-right: thin solid #ddd;
+}
+.title div {
+	font-weight: bolder;
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	/*padding-left: 5%;*/
+	padding-right: 5%;
+	border-right: thin solid #ddd;
+}
+.title div:last-child {
+	border-right: none;
+}
+.check-box {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+}
+.check-align-left {
+	text-align: left;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.check-absolute {
+	position: absolute !important;
+	top: 0;
+	left: 0;
+}
+.check-box .absolute-center {
+	left: 50%;
+	top: 50%;
+	margin-left: -6px;
+	margin-top: -6px;
+}
+.main {
+	width: 100%;
+	height: 100%;
+}
+/*.second {
+	width: 20%;
+	left: 20%;
+	height: 100%;
+}*/
+.third {
+	left: 100%;
+	width: 300%;
+}
+.check-block {
+	width: 100%;
+}
+._top_ {
+	top: 75px
+}
+.row-of-three {
+	width: 33.33%;
+	height: 35px;
+}
+/*vertical*/
+.vertical-checkbox {
+	overflow: hidden;
+}
+.vertical-checkbox > div {
+	float: left;
+}
+.vertical-checkbox .title {
+	width: 10%;
+	text-align: center
+}
+.vertical-checkbox .title div:last-child {
+	border-right: thin solid #ddd;
+}
+.vertical-checkbox .title > div {
+	width: 100% !important;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-bottom: thin solid #ddd;
+}
+.vertical-checkbox .div-checkbox {
+	width: 90%;
+	height: auto;
+}
+.vertical-checkbox .all-checked {
+	display: block;
+}
+.vertical-checkbox .div-checkbox {
+	border-left: none;
+}
+.vertical-checkbox .main {
+	width: 100%;
+	border-top: thin solid #ddd;
+	border-left: thin solid #ddd;
+}
+.vertical-checkbox .second, .vertical-checkbox .third {
+	width: 100%;
+	border-bottom: none;
+	border-right: thin solid #ddd;
+}
+.vertical-checkbox .second > .levelDIV {
+	width: 50% !important;
+	float: left;
+}
+.vertical-checkbox .third p.check-box {
+	width: 33.33%;
+	float: left;
+	border-bottom: none;
+}
+.vertical-checkbox p.check-box {
+	margin: 0px;
+	width: 100%;
+	height: 70%;
+	text-align: center;
+	border-bottom: thin solid #ddd;
+	border-right: thin solid #ddd;
+}
+/*Is Level Two Start*/
+.level-two .levelDIV {
+	overflow: hidden;
+}
+/*.level-two .second {
+	width: 80%;
+}*/
+.level-two .second > .levelDIV:last-child {
+	border-bottom: none;
+}
+.level-two .title > div {
+	border-bottom: thin solid #ddd;
+}
+.level-two .second p.check-box {
+	width: 25%;
+	float: left;
+	height: 40px;
+	position: relative;
+	border-bottom: thin solid #ddd;
+}
+.level-two .second p.check-box > label {
+	left: 4%;
+	top: 15%;
+	margin-top: -6px;
+	margin-left: -6px;
+}
+  /*Is Level Two End*/
+</style>
+
+</head>
+<body>
+<h4>区域划分</h4>
+<div class="all-checkbox level-two">
+  <!--   <label class="all-checked"> <span class="ui-checkbox"></span>
+    <input type="checkbox" name="all-checked" value="">
+    全选 </label> -->
+    <div class="title borderRight">
+    <!-- <div class="borderLeft" style="width:20.05%;">区域</div> -->
+    <div style="width:125%;"><input type="text" id="code_name" name="code_name" value="" placeholder="请输入区域，例如：华东地区"  class="col-xs-10 " style="margin-left: 0px;line-height: 1.428571429;"></div>
+  </div>
+    <div class="div-checkbox">
+    <div class="levelDIV check-absolute main">
+<!--         <p class="check-box check-absolute _border_">
+        <label class="check-absolute absolute-center"> <span class="ui-checkbox"></span>
+            <input type="checkbox" class="absolute-center">
+            华北 </label>
+        </p> -->
+        <div class="levelDIV check-absolute second">
+        
+        <div class="levelDIV">
+        {volist name="data" id="vo"}
+            <p class="check-box check-block _border_">
+            <label> <span class="ui-checkbox"></span>
+                <input type="checkbox" value="{$vo.region_id}">
+                {$vo.region_name} </label>
+          </p>
+          {/volist}
+        </div>
+        
+      </div>
+      </div>
+  </div>
+  </div>
+<br/>
+<br/>
+<div class="Button_operation">
+  <button class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+</div>
+<script src="__MODES__/js/jquery-1.9.1.min.js"></script>
+<script src="__PLUGINS__/layer/layer.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+    //判断是否全选
+    function isAllChecked(){
+      $(".all-checkbox").each(function() {
+        var $self = $(this)   ,
+            all   = $(this).find(":checkbox").not("[name='sales_group_id'],:disabled") ,
+            allChecked = $(this).find(":checked").not("[name='all-checked']") ,
+            thisAllCheckBtn = $(this).find(".all-checked [name='all-checked']");
+
+        thisAllCheckBtn.on("click",function(){
+          if($(this).get(0).checked){
+            $(this).prev("span.ui-checkbox").addClass('active');
+            $self.find(".levelDIV").find('input:checkbox').not(":disabled").prop('checked' ,true)
+            .closest('p.check-box').find('span.ui-checkbox').addClass('active');
+
+          }else{
+            $(this).prev("span.ui-checkbox").removeClass('active');
+            $self.find(".levelDIV").find('input:checkbox').not(":disabled").prop('checked' ,false)
+            .closest('p.check-box').find('span.ui-checkbox').removeClass('active');
+          }
+        });
+        if(all.length === allChecked.length){
+          thisAllCheckBtn.prop('checked' ,true).prev("span.ui-checkbox").addClass('active');
+        }else{
+          thisAllCheckBtn.prop('checked' ,false).prev("span.ui-checkbox").removeClass('active');
+        }
+      });
+
+    };
+    isAllChecked();
+    function countCheckboxDOM(obj){
+      obj.each(function(){
+        var _this_ = $(this)
+        if(!_this_.parent().hasClass("vertical-checkbox")){
+          // Init
+          var IsLevelTwo   = _this_.closest(".all-checkbox").hasClass('level-two');
+          var hei          = _this_;
+          //var sed          = _this_.find(".second > .levelDIV > p.check-box");
+          var sed          = IsLevelTwo?_this_.find(".second > .levelDIV"):_this_.find(".second > .levelDIV .third");
+          var levelNum     = IsLevelTwo?_this_.find(".second"):_this_.find(".third");
+          var levelNumWid  = levelNum.height();
+
+          // Function
+          hei.css("height",levelNumWid * sed.length);
+
+          if(IsLevelTwo){
+            sed.each(function() {
+              var i = $(this).index();
+              sed.eq(i).css("height",sed.get(i).clientHeight);
+              var total = 0;
+              for(var j = 0 ; j < sed.length ;  j++){
+                total += sed.get(j).clientHeight;
+              };
+
+              hei.css("height",total);
+            });
+          }else{
+            var t = 0;
+            for(var i = 0 ; i < sed.length ; i++){
+                var CH = sed.get(i).clientHeight > 0?sed.get(i).clientHeight:35;
+              sed.eq(i).css("height" , CH );
+              sed.prev("p.check-box").eq(i).css("height" , sed.get(i).clientHeight + 1);
+              if(i>0){
+                var height = sed.eq(i-1).css("height");
+                var top    = sed.eq(i-1).css("top");
+                var total =  parseFloat(height.substring(0,height.length-2)) + parseFloat(top.substring(0,top.length-2));
+                levelNum.eq(i).css("top",total);  
+              }
+              t += levelNum.eq(i).height() + 1;
+            }
+            hei.css("height",t);
+          };
+          
+          // for(var i = 0 ; i < levelNum.length ; i++){
+          //   levelNum.eq(i).css("top",(hei.height()/sed.length)*i);  
+          // }
+        }
+      });         
+    }
+
+    function setDisable(obj){
+      obj.each(function() {
+        if($(this).is(":disabled") ){
+          if($(this).closest(".levelDIV").find("div").length > 0){
+            $(this).closest(".levelDIV").find("input:checkbox").prop('disabled', true);
+          }
+          $(this).prev(".ui-checkbox").addClass('disabled');
+        }
+      });
+    };
+// ----------------------------------------------------------------
+    var eachDIV      =  $(".div-checkbox") ,
+        allLevelDIV  =  eachDIV.find(".levelDIV") ,
+        CheckBox     =  eachDIV.find("[type=checkbox]") ;
+        countCheckboxDOM(eachDIV);
+        setDisable(CheckBox);
+
+
+    $(".div-checkbox label,.all-checked").hover(function() {
+      if(!$(this).children("input[type='checkbox']").hasClass('disabled') || !$(this).children("input[type='checkbox']").hasClass('readonly')  ){
+        $(this).children("span.ui-checkbox").addClass('hover');        
+      }
+
+    }, function() {
+      $(this).children("span.ui-checkbox").removeClass('hover');
+    });
+    
+    //e.currentTarget e.target
+    //从下往上选择
+    allLevelDIV.on('click', function(e) {
+      if(e.target.checked){
+        if(e.currentTarget != $(e.target).parents(".levelDIV").get(0)){
+          var levelLen = $(e.currentTarget).children('.levelDIV').length;
+          $(e.currentTarget).children('p.check-box').find('input:checkbox').not(":disabled").prop('checked' ,true)
+          .closest('p.check-box').find('span.ui-checkbox').addClass('active');
+        }        
+      }else{
+        if (e.currentTarget != $(e.target).parents(".levelDIV").get(0) && $(e.currentTarget).children('.levelDIV').find('input:checked').length < 1) {
+          $(e.currentTarget).children('p').find('input:checkbox').not(":disabled").prop('checked', false)
+          .closest('p.check-box').find('span.ui-checkbox').removeClass('active');
+        }
+      }
+    });
+    //从上往下选择
+    CheckBox.on('click', function(event) {
+      if (!this.checked ) {
+        if($(this).closest(".levelDIV").find("div").length > 0){
+          $(this).closest(".levelDIV").find("input:checkbox").not(":disabled").prop('checked', false)
+          .closest('p.check-box').find('span.ui-checkbox').removeClass('active');
+        }else{
+          $(this).prev('span.ui-checkbox').removeClass('active');
+        }
+        //event.stopPropagation();
+      } else {
+        if($(this).closest(".levelDIV").find("div").length > 0){
+          $(this).closest(".levelDIV").find("input:checkbox").not(":disabled").prop('checked', true)
+          .closest('p.check-box').find('span.ui-checkbox').addClass('active');  
+        }else{
+          $(this).prev('span.ui-checkbox').addClass('active');
+        }
+      }
+      isAllChecked();
+    });
+
+});
+
+$(window).load(function() {
+  $(".all-checkbox").css("visibility" , "visible");  
+});
+
+
+
+$(".radius").click(function(){
+    var arr = new Array();
+    $('input[type=checkbox]:checked').each(function(i){
+        arr[i] = $(this).val();
+    });
+    var vals = arr.join(",");
+    var urls = "{:Url('admin/region/addcode')}";
+    var code_name = $("#code_name").val();
+    if(vals==''){
+      layer.msg('请至少选择一个省份');
+      return false;
+    }
+    if(code_name==''){
+      layer.msg('请输入区域名称');
+      return false;
+    }
+    $.post(urls, {data:vals,name:code_name}, function(e){
+      if(e.error==0){
+          layer.msg(e.msg);
+          setTimeout(function(){
+              // parent.location.reload(); // 刷新父级页面!
+              // top.location.href="{:Url('Agent/Login/index')}"; // 跳转父级页面
+              location.reload();
+          },2500) 
+      }else if(e.error==1){
+          layer.msg(e.msg);
+      }
+    });
+});
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,683 @@
+---------------------------------------------------------------
+[ 2018-12-17T11:03:08+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/
+[运行时间：0.552981s] [吞吐率：1.81req/s] [内存消耗：3,050.89kb] [文件加载：77]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/index/index/register.html [ array (
+  0 => 'id',
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T11:03:09+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/static/index/js/jquery-1.8.3.min.js
+[运行时间：0.031158s] [吞吐率：32.09req/s] [内存消耗：2,382.54kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:14+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/static/index/js/jquery-1.8.3.min.js
+[运行时间：0.021012s] [吞吐率：47.59req/s] [内存消耗：2,382.54kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:16+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_baba
+[运行时间：0.025109s] [吞吐率：39.83req/s] [内存消耗：2,382.16kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:16+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_baba
+[运行时间：0.020923s] [吞吐率：47.79req/s] [内存消耗：2,382.13kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:19+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.071034s] [吞吐率：14.08req/s] [内存消耗：3,019.22kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T11:03:20+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/captcha.html
+[运行时间：0.034544s] [吞吐率：28.95req/s] [内存消耗：2,360.36kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T11:03:21+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_
+[运行时间：0.026702s] [吞吐率：37.45req/s] [内存消耗：2,382.22kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:21+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_
+[运行时间：0.021630s] [吞吐率：46.23req/s] [内存消耗：2,382.22kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:22+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login
+[运行时间：0.020787s] [吞吐率：48.11req/s] [内存消耗：2,382.22kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:22+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login
+[运行时间：0.020868s] [吞吐率：47.92req/s] [内存消耗：2,382.22kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:29+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_bb
+[运行时间：0.021221s] [吞吐率：47.12req/s] [内存消耗：2,382.19kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:29+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_bb
+[运行时间：0.020582s] [吞吐率：48.59req/s] [内存消耗：2,382.22kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:43+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.027197s] [吞吐率：36.77req/s] [内存消耗：3,020.08kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ VIEW ] ../Theme/adminsys/main/login.html [ array (
+  0 => 'config',
+) ]
+---------------------------------------------------------------
+[ 2018-12-17T11:03:43+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/captcha.html
+[运行时间：0.021261s] [吞吐率：47.03req/s] [内存消耗：2,360.43kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'captcha/<id?>',
+  'route' => '\\think\\captcha\\CaptchaController@index',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'image/webp,image/apng,image/*,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T11:03:45+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/static/admin/images/loginsj.png
+[运行时间：0.021279s] [吞吐率：46.99req/s] [内存消耗：2,382.50kb] [文件加载：61]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[ 2018-12-17T11:03:53+08:00 ] 140.250.240.214 POST baba.sdshengyixing.com/_login_ba
+[运行时间：0.258381s] [吞吐率：3.87req/s] [内存消耗：4,858.11kb] [文件加载：90]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'content-length' => '41',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://baba.sdshengyixing.com',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+)
+[ info ] [ PARAM ] array (
+  'login_name' => 'admin',
+  'password' => '123456',
+  'code' => '657',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000345s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.082339s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_name` = 'admin' LIMIT 1 [ RunTime:0.001160s ]
+[ sql ] [ SQL ] UPDATE `cc_admin`  SET `admin_time` = 1545015833  WHERE  `admin_id` = 16 [ RunTime:0.000452s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:03:56+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/index/index.html
+[运行时间：0.137575s] [吞吐率：7.27req/s] [内存消耗：4,338.18kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/_login_ba',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000619s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:04:04+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/index/home.html
+[运行时间：0.311110s] [吞吐率：3.21req/s] [内存消耗：4,403.53kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000464s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.021037s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` LIMIT 1 [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.048092s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_benefit` [ RunTime:0.011842s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_benefit` WHERE  `benefit_type` = 0 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_pay_upgrade` [ RunTime:0.011419s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_pay_upgrade` WHERE  `upgrade_state` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.022420s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.002557s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.001299s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_type_id` = 2 LIMIT 1 [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:04:10+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/grade/index.html
+[运行时间：0.051344s] [吞吐率：19.48req/s] [内存消耗：4,241.14kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000547s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000546s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:37+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/_login_ba
+[运行时间：0.031574s] [吞吐率：31.67req/s] [内存消耗：3,044.24kb] [文件加载：76]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => '_login_ba',
+  'route' => 'Admin/Main/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[ 2018-12-17T11:08:37+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/index/index.html
+[运行时间：0.040705s] [吞吐率：24.57req/s] [内存消耗：4,337.77kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000727s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000387s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:38+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/index/home.html
+[运行时间：0.040639s] [吞吐率：24.61req/s] [内存消耗：4,358.41kb] [文件加载：83]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/index/home.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'count',
+  7 => 'feedback',
+  8 => 'usertype',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000400s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_feedback` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_feedback` WHERE  `feedback_state` = 1 LIMIT 5 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user_type` [ RunTime:0.000295s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:40+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/grade/index.html
+[运行时间：0.035574s] [吞吐率：28.11req/s] [内存消耗：4,241.14kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000399s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000283s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:41+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/agent/applyagent.html
+[运行时间：0.254099s] [吞吐率：3.94req/s] [内存消耗：4,757.73kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/agent/applyagent.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000466s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent_record` [ RunTime:0.034120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent_record` LIMIT 1 [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent_record` ORDER BY `agent_recode_time` DESC LIMIT 0,10 [ RunTime:0.000229s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:44+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/grade/index.html
+[运行时间：0.038843s] [吞吐率：25.74req/s] [内存消耗：4,241.14kb] [文件加载：79]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000556s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000297s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:47+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/agent/index.html
+[运行时间：0.081369s] [吞吐率：12.29req/s] [内存消耗：4,766.07kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/agent/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001369s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent` ORDER BY `agent_time` DESC LIMIT 0,10 [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT `agent_account` FROM `cc_agent` WHERE  `agent_id` = 4 LIMIT 1 [ RunTime:0.000440s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:08:54+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/agent/listus.html?aid=1
+[运行时间：0.078442s] [吞吐率：12.75req/s] [内存消耗：4,999.07kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/agent/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/agent/listus.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent` WHERE  `agent_id` = 1 LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_agent_id` = 1 LIMIT 1 [ RunTime:0.000271s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_agent_id` = 1 ORDER BY `user_time` DESC LIMIT 0,30 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 3 LIMIT 1 [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT `agent_account` FROM `cc_agent` WHERE  `agent_id` = 1 LIMIT 1 [ RunTime:0.000649s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:09:35+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/agent/index.html
+[运行时间：0.042397s] [吞吐率：23.59req/s] [内存消耗：4,766.07kb] [文件加载：86]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/agent/index.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000465s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000968s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_agent` LIMIT 1 [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent` ORDER BY `agent_time` DESC LIMIT 0,10 [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `agent_account` FROM `cc_agent` WHERE  `agent_id` = 4 LIMIT 1 [ RunTime:0.000285s ]
+---------------------------------------------------------------
+[ 2018-12-17T11:09:36+08:00 ] 140.250.240.214 GET baba.sdshengyixing.com/Admin/agent/listus.html?aid=1
+[运行时间：0.091347s] [吞吐率：10.95req/s] [内存消耗：4,998.91kb] [文件加载：88]
+[ info ] [ LANG ] /www/wwwroot/baba/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+)
+[ info ] [ HEADER ] array (
+  'host' => 'baba.sdshengyixing.com',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'referer' => 'http://baba.sdshengyixing.com/Admin/agent/index.html',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'PHPSESSID=foq3k4n7qbtkd45rtc4rgttdc7',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'aid' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] ../Theme/adminsys/agent/listus.html [ array (
+  0 => 'contrname',
+  1 => 'actionname',
+  2 => 'leftType',
+  3 => 'contractionname',
+  4 => 'config',
+  5 => 'admin',
+  6 => 'list',
+) ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;port=3306;dbname=baba2018;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_admin` [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_admin` WHERE  `admin_id` = 16 LIMIT 1 [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_agent` [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_agent` WHERE  `agent_id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user` [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `cc_user` WHERE  `user_agent_id` = 1 LIMIT 1 [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `cc_user` WHERE  `user_agent_id` = 1 ORDER BY `user_time` DESC LIMIT 0,30 [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `cc_user_type` [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `type_name` FROM `cc_user_type` WHERE  `type_id` = 1 LIMIT 1 [ RunTime:0.000309s ]

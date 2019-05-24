@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<script src="__PLUGINS__/jquery-1.9.1.min.js"></script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script src="__MODES__/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="__MODES__/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__MODES__/assets/js/ace-elements.min.js"></script>
+		<script src="__MODES__/assets/js/ace.min.js"></script>
+		<title>新增优惠券</title>
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<script src="__PLUGINS__/common.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.all.min.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/lang/zh-cn/zh-cn.js"></script>
+	</head>
+	<body>
+		<div class="margin clearfix">
+			<div class="stystems_style">
+				<div class="tabbable">
+					<div class="tab-content">
+						<form name="conp-form" id="conp-form" action="">
+						<div id="home" class="tab-pane active">
+
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>名称： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" name="name" id="name" value="{$conp['cou_name']}" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>类型： </label>
+								<div class="col-sm-8">
+									<select name="type" id="type" class="form-control" style="margin-left: 10px;">
+										<option value="">请选择</option>
+										<option value="1" {if $conp.cou_type==1} selected="selected" {/if}>商品积分券</option>
+										<option value="2" {if $conp.cou_type==2} selected="selected" {/if}>升级等级券</option>
+										<option value="3" {if $conp.cou_type==3} selected="selected" {/if}>计划优惠券</option>
+										<option value="4" {if $conp.cou_type==4} selected="selected" {/if}>收款优惠券</option>
+									</select>
+								</div>
+							</div>
+							<input type="hidden" name="cou_id" value="{$conp.cou_id}" />
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>券值： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="{$conp['cou_value']}" name="value" id="value" class="col-xs-10" step="0.0001">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>过期时长(0为长期) 天： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="{$conp['cou_time']}" id="time" name="time" class="col-xs-10 "  step="0.5">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>赠送规则： </label>
+								<div class="col-sm-8">
+									   <label style="margin-top:5px;margin-left: 10px;">
+									      <input type="radio" name="rule" id="rule" value="0" {if $conp.cou_rule==0} checked {/if} onlick="rulsdas()" /> 注册&nbsp;&nbsp;
+									      <input type="radio" name="rule" id="rule" value="1" {if $conp.cou_rule==1} checked {/if} onclick="rulsdas()" /> 分享&nbsp;&nbsp;
+									      <input type="radio" name="rule" id="rule" value="2" {if $conp.cou_rule==2} checked {/if} onclick="rulsdas()" /> 推广&nbsp;&nbsp;
+									      <input type="radio" name="rule" id="rule" value="3" {if $conp.cou_rule==3} checked {/if} onclick="ruls()" /> 推广升级
+									   </label>
+								</div>
+							</div>
+							<div class="form-group" id="utype" style="display: none"><label class="col-sm-2 control-label no-padding-right"><i>*</i>升级会员类型ID </label>
+								<div class="col-sm-8">
+									<select name="user_type" id="user_type" class="form-control" style="">
+										<option value="">请选择</option>
+										{volist name='utyp' id='v' }
+										<option value="{$v.type_id}" {if $conp.cou_user_type==$v.type_id} selected="selected" {/if}>{$v.type_name}</option>
+										{/volist}
+									</select>
+								</div>
+							</div>
+
+
+							<div class="Button_operation">
+								<button onclick="addSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function ruls(){
+				$("#utype").show(500);
+			}
+
+			function rulsdas(){
+				$("#utype").hide(500);
+			}
+
+			function addSubmit () {
+				var url    		= $("#conp-form").attr('action');
+				var name   		= $('#name').val();
+				var type   	    = $('#type').val();
+				var value   	= $('#value').val();
+				var time  		= $('#time').val();
+				var rule		= $('input:radio[name="rule"]:checked').val();
+				var user_type   = $('#user_type').val();
+
+				if(name==''){
+					layer.msg('优惠券名称');return false;
+				}
+				if(type==''){
+					layer.msg('请选择优惠券类型');return false;
+				}
+				if(value==''){
+					layer.msg('请输入优惠券值');return false;
+				}
+				if(time==''){
+					layer.msg('请输入优惠券过期时长');return false;
+				}
+				
+				if(rule==''){
+					layer.msg('请选择优惠券赠送规则');return false;
+				}
+
+				if(rule=='3'){
+					if(user_type==''){
+						layer.msg('升级会员类型ID');return false;
+					}
+				}
+
+				var data   = $("#conp-form").serialize();
+				ajaxPost(url,$("#btn-primary"),data,function (r) {
+		            $("#btn-primary").removeAttr('disabled');
+		           window.location.href="{:Url('Coupon/coulist')}"
+		        })
+			}
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,267 @@
+<?php /*a:1:{s:35:"../Theme/adminsys/payment/edit.html";i:1547802348;}*/ ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link href="/static/admin/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="/static/admin/css/style.css" />
+		<link href="/static/admin/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="/static/admin/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="/static/admin/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+	  <link rel="stylesheet" href="/static/admin/assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+		<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="/static/admin/assets/css/ace-ie.min.css" />
+	<![endif]-->
+		<script src="/plugins/jquery-1.9.1.min.js"></script>
+		<script src="/static/admin/assets/js/bootstrap.min.js"></script>
+		<script src="/static/admin/assets/js/typeahead-bs2.min.js"></script>
+		<script src="/static/admin/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="/static/admin/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="/static/admin/assets/js/ace-elements.min.js"></script>
+		<script src="/static/admin/assets/js/ace.min.js"></script>
+		<title>编辑</title>
+		<script src="/plugins/layer/layer.js"></script>
+		<script src="/plugins/common.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="/plugins/ueditor1_4_3_3-utf8-php/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="/plugins/ueditor1_4_3_3-utf8-php/ueditor.all.min.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="/plugins/ueditor1_4_3_3-utf8-php/lang/zh-cn/zh-cn.js"></script>
+
+
+	    <!-- <link href="/plugins/umeditor1_2_3-utf8-php/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+	    <script type="text/javascript" src="/plugins/umeditor1_2_3-utf8-php/third-party/jquery.min.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="/plugins/umeditor1_2_3-utf8-php/umeditor.config.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="/plugins/umeditor1_2_3-utf8-php/umeditor.min.js"></script>
+	    <script type="text/javascript" src="/plugins/umeditor1_2_3-utf8-php/lang/zh-cn/zh-cn.js"></script> -->
+	</head>
+	<body>
+		<div class="margin clearfix">
+			<div class="stystems_style">
+				<div class="tabbable">
+					<div class="tab-content">
+						<form name="bank-form" id="bank-form" action="">
+						<div id="home" class="tab-pane active">
+
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>通道： </label>
+								<div class="col-sm-8">
+									<select name="channel" class="form-control" style="margin-left: 10px;">
+										<?php if(is_array($payment_channel) || $payment_channel instanceof \think\Collection || $payment_channel instanceof \think\Paginator): $i = 0; $__LIST__ = $payment_channel;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$v): $mod = ($i % 2 );++$i;?>
+											<option value="0">请选择通道</option>
+											<option value="<?php echo htmlentities($v['channel_id']); ?>" <?php if($info['payment_channel_id']==$v['channel_id']): ?>selected<?php endif; ?>><?php echo htmlentities($v['channel_name']); ?></option>
+										<?php endforeach; endif; else: echo "" ;endif; ?>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>名称： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" value="<?php echo htmlentities($info['payment_name']); ?>" name="payment_name" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>费率： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_rate']); ?>" name="payment_rate" class="col-xs-10" step="0.0001">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>结算费用： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_close_fee']); ?>" name="payment_close_fee" class="col-xs-10"  step="0.5">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind">类型： </label>
+								<div class="col-sm-8">
+
+									<input type="hidden" class="form-control" value="<?php echo htmlentities($info['payment_type']); ?>" name="type" class="col-xs-10">
+									<select name="type1" class="form-control" style="margin-left: 10px;" disabled="">
+										<option value="0">请选择类型</option>
+										<option value="1" <?php if($info['payment_type']==1): ?> selected="selected" <?php endif; ?>>收款</option>
+										<option value="2" <?php if($info['payment_type']==2): ?> selected="selected" <?php endif; ?>>还款</option>
+										<option value="3" <?php if($info['payment_type']==3): ?> selected="selected" <?php endif; ?>>代付</option>
+										<option value="4" <?php if($info['payment_type']==4): ?> selected="selected" <?php endif; ?>>会员升级</option>
+										<!-- <option value="5" <?php if($info['payment_type']==5): ?> selected="selected" <?php endif; ?>>混合</option> -->
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="use">状态： </label>
+								<div class="col-sm-8">
+									<select name="use" class="form-control" style="margin-left: 10px;">
+										<option value="0">未启用</option>
+										<option value="1" <?php if($info['payment_use']==1): ?>selected<?php endif; ?>>启用</option>
+									</select>
+								</div>
+							</div>
+
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>每天最大笔数： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_day_num']); ?>" name="day_num" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>最大笔数： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_num']); ?>" name="payment_num" class="col-xs-10 ">
+								</div>
+							</div>
+
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><时间限制： </label>
+								<div class="col-sm-8"><input type="text" name="entime" id="entime"  class="form-control" value="<?php echo htmlentities($info['paymentst_entime']); ?>"></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>控制器(<font color="red">不可更改</font>)： </label>
+								<div class="col-sm-8">
+									<input type="text" class="form-control" value="<?php echo htmlentities($info['payment_controller']); ?>" name="payment_controller" class="col-xs-10 ">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind">需要绑卡(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="bind" class="form-control" style="margin-left: 10px;">
+										<option value="0">否</option>
+										<option value="1" <?php if($info['payment_bind']==1): ?>selected<?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind_d">需要绑储蓄卡(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="bind_d" class="form-control" style="margin-left: 10px;">
+										<option value="0">否</option>
+										<option value="1" <?php if($info['payment_bind_d']==1): ?>selected<?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind">绑卡方式(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="bind_way" class="form-control" style="margin-left: 10px;">
+										<option value="api" <?php if($info['payment_bind_way']=='api'): ?>selected<?php endif; ?>>api</option>
+										<option value="web" <?php if($info['payment_bind_way']=='web'): ?>selected<?php endif; ?>>web</option>
+									</select>
+								</div>
+							</div>
+							
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>单笔最小金额(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_min_money']); ?>" name="min_money" class="col-xs-10">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i>*</i>单笔最大金额(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control" value="<?php echo htmlentities($info['payment_max_money']); ?>" name="max_money" class="col-xs-10">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>总款限制(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8"><input type="text" name="money" id="money"  class="form-control" value="<?php echo htmlentities($info['paymentst_money']); ?>"></div>
+							</div>
+					        <div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1">风控值(开始)： </label>
+								<div class="col-sm-8"><input type="text" name="risk_start" id="risk_start"  class="form-control" value="<?php echo htmlentities($info['payment_risk_start']); ?>"></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1">风控值(结束)： </label>
+								<div class="col-sm-8"><input type="text" name="risk_end" id="risk_end"  class="form-control" value="<?php echo htmlentities($info['payment_risk_end']); ?>"></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>扣款模式： </label>
+								<div class="col-sm-8">
+									<select name="money_mode" id="money_mode" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_money_mode']==0): ?> selected="selected" <?php endif; ?>>扣款有小数</option>
+										<option value="1" <?php if($info['payment_money_mode']==1): ?> selected="selected" <?php endif; ?>>扣款无小数</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>还款模式(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="mode" id="mode" class="form-control" style="margin-left: 10px;">
+										<option value="0">请选择还款模式</option>
+										<option value="1" <?php if($info['payment_mode']==1): ?> selected="selected" <?php endif; ?>>多刷一还</option>
+										<option value="2" <?php if($info['payment_mode']==2): ?> selected="selected" <?php endif; ?>>一刷多还</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>计划模式(<font color="red">根据通道修改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="pattern" id="pattern" class="form-control" style="margin-left: 10px;">
+										<option value="0">请选择计划模式</option>
+										<option value="1" <?php if($info['payment_pattern']==1): ?> selected="selected" <?php endif; ?>>一刷一还</option>
+										<option value="2" <?php if($info['payment_pattern']==2): ?> selected="selected" <?php endif; ?>>二刷一还或一刷二还</option>
+										<option value="3" <?php if($info['payment_pattern']==3): ?> selected="selected" <?php endif; ?>>三刷一还或一刷三还</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>是否立即支付(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="paynow" id="paynow" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_paynow']==0): ?> selected="selected" <?php endif; ?>>否</option>
+										<option value="1" <?php if($info['payment_paynow']==1): ?> selected="selected" <?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>是否支持地区(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="region" id="region" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_region']==0): ?> selected="selected" <?php endif; ?>>否</option>
+										<option value="1" <?php if($info['payment_region']==1): ?> selected="selected" <?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>是否支持通道自动获取行业(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="mcc" id="mcc" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_mcc']==0): ?> selected="selected" <?php endif; ?>>否</option>
+										<option value="1" <?php if($info['payment_mcc']==1): ?> selected="selected" <?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>是否有余额(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="pay_mode" id="pay_mode" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_pay_mode']==0): ?> selected="selected" <?php endif; ?>>否</option>
+										<option value="1" <?php if($info['payment_pay_mode']==1): ?> selected="selected" <?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="bind"><i>*</i>订单关联(<font color="red">不可随意更改</font>)： </label>
+								<div class="col-sm-8">
+									<select name="orders" id="orders" class="form-control" style="margin-left: 10px;">
+										<option value="0" <?php if($info['payment_orders']==0): ?> selected="selected" <?php endif; ?>>否</option>
+										<option value="1" <?php if($info['payment_orders']==1): ?> selected="selected" <?php endif; ?>>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i></i>查询列表时间(分钟)： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control"  name="que" value="<?php echo htmlentities($info['payment_que']); ?>">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right"><i></i>最小计划间隔时间(分钟)： </label>
+								<div class="col-sm-8">
+									<input type="number" class="form-control"  name="interval_time" value="<?php echo htmlentities($info['payment_interval_time']); ?>">
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>配置信息： </label>
+					          <div class="col-sm-8"><textarea id="config" name="config" class="form-control" style="height: 75px;" placeholder="key:value|key:value|key:value|....."><?php echo htmlentities($info['payment_config']); ?></textarea></div>
+					        </div>
+							<div class="Button_operation">
+								<input type="hidden" name="id" value="<?php echo htmlentities($info['payment_id']); ?>">
+								<button onclick="saveSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function  saveSubmit () {
+				var url    = $("#bank-form").attr('action');
+				var data   = $("#bank-form").serialize();
+				ajaxPost(url,$("#bank-btn"),data,function (r) {
+		            $("#bank-btn").removeAttr('disabled');
+		            //location.reload();
+                    window.parent.location.reload();
+		            var index = parent.layer.getFrameIndex(window.name);
+					parent.layer.close(index);
+		        })
+			}
+		</script>
+	</body>
+
+</html>

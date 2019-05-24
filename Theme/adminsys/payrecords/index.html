@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/font-awesome-ie7.min.css" />
+		<![endif]-->
+		<!--[if lte IE 8]>
+		  <link rel="stylesheet" href="__MODES__/assets/css/ace-ie.min.css" />
+		<![endif]-->
+		<script src="__MODES__/assets/js/jquery.min.js"></script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<![endif]-->
+
+		<!--[if !IE]> -->
+
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+		</script>
+
+		<!-- <![endif]-->
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		 window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__MODES__/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<!-- page specific plugin scripts -->
+		<script type="text/javascript" src="__JS__/H-ui.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.admin.js"></script>
+		
+		<script  src="__PLUGINS__/layer/layer.js"></script>
+	    <script  src="__PLUGINS__/common.js"></script>
+		<title>收款订单</title>
+	</head>
+
+	<body>
+		<div class="page-content clearfix">
+			<div id="Member_Ratings">
+				<div class="d_Confirm_Order_style">
+					<div class="search_style">
+					  <form action="" method='get' id="forms">
+						<ul class="search_content clearfix">
+							<li><input name="keywords" id="keywords" type="text" class="text_add" value="{$getdata['keywords']?$getdata['keywords']:''}" placeholder="输入会员名称、电话、订单单号" style=" width:400px" /></li>
+                          	<li><label class="l_f">状态</label>
+					 			<select name="state" id="state" style=" width:100px">
+					 				<option value="">--全部--</option>
+					 				<option value="1" {if isset($getdata.state) && $getdata.state==1}selected{/if}>--交易成功--</option>
+					 				<option value="2" {if isset($getdata.state) && $getdata.state==2}selected{/if}>--支付失败--</option>
+					 				<option value="3" {if isset($getdata.state) && $getdata.state==3}selected{/if}>--支付中--</option>
+                                  	<option value="4" {if isset($getdata.state) && $getdata.state==4}selected{/if}>--代付中--</option>
+                                  	<option value="5" {if isset($getdata.state) && $getdata.state==5}selected{/if}>--代付失败--</option>
+					 			</select>
+					 		</li>
+							<li style="width:90px;"><button type="button" id="search" class="btn_search"><i class="icon-search"></i>查询</button></li>
+							<li style="width:90px;"><button type="button" id="searchAout" class="btn_search"><i class="icon-search"></i>全部</button></li>
+						</ul>
+                      </form>
+					</div>
+					<div class="amounts_style">
+						<div class="transaction_Money clearfix">
+							<div class="Money"><span>成交总额：{$count.count}元</span>
+								<p>统计每访问期1个小时更新一次</p>
+							</div>
+							<div class="Money"><span>总手续费：{$count.count_fee}元</span>
+								<p>统计每访问期1个小时更新一次</p>
+							</div>
+							<div class="Money"><span><em>￥</em>{$count.today}元</span>
+								<p>当天成交额</p>
+							</div>
+							<div class="Money"><span>{$count.today_fee}元</span>
+								<p>当天成交手续费</p>
+							</div>
+						</div>
+					</div>
+					<div class="table_menu_list">
+						<table class="table table-striped table-bordered table-hover" >
+							<thead>
+								<tr>
+									<th width="25"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
+									<th width="80">ID</th>
+									<th>通道</th>
+									<th>姓名</th>
+									<th>手机</th>
+									<th>银行</th>
+									<th>订单号</th>
+									<th>订单金额</th>
+									<th>实到金额</th>
+                                  	<th>入金账户</th>
+                                    <th>出金账户</th>
+									<th>费率</th>
+									<th>状态</th>
+									<th>上游提示</th>
+									<th>时间</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody>
+								{volist name='list' id='v' }
+									<tr>
+										<td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
+										<td>{$v.records_id}</td>
+										<td title="{$v.payment_name}[{$v.payment_id}]">{$v.channel_name}</td>
+										<td title="{$v.user_id}">{$v.user_name}</td>
+										<td>{$v.user_phone}</td>
+										<td title="[{$v.back_id} - {$v.card_id}]">{$v.back_name}</td>
+										<td title="{$v.records_form_number}">{$v.records_form_no}</td>
+										<td>{$v.records_money}</td>
+										<td>{$v.records_amount}</td>
+                                      	<td>{$v.records_cid|getCard='card_no'}</td>
+										<td>{$v.records_pay_cid|getCard='card_no'}</td>
+										<td>{$v.records_rate * 100}% +{$v.records_close_rate}元</td>
+										<td>
+											{switch v.records_state}
+											    {case 0}未确认{/case}
+											    {case 1}已完成{/case}
+											    {case 2}支付失败{/case}
+											    {case 3}支付中{/case}
+											    {case 4}待付中{/case}
+											    {case 5}代付失败{/case}
+											    {default /}其他异常
+											{/switch}
+										</td>
+										<td>{if $v.records_state != 1}{$v.records_msg}{/if}</td>
+										<td>{$v.records_time|date='Y-m-d H:i:s'}</td>
+										<td>
+											<a title="查询状态" href="javascript:;" onclick="state('{$v.records_id}')" class="btn btn-xs btn-success" id="state-btn">
+												查询状态
+											</a>
+											{if $v.records_state == 5}
+												<a href="javascript:;" title="补单" data-url="{:Url('bd')}?records_id={$v['records_id']}&form_no={$v['records_form_no']}&type=0" data-confirm="您确认要补单吗？"  class="link-confirm btn btn-xs btn-warning">补单</a>
+												<a href="javascript:;" title="查询余额" data-url="{:Url('balance_query')}?form_no={$v['records_form_no']}&type=0" data-confirm="您确认要查询余额吗？"  class="link-confirm btn btn-xs btn-success">查询余额</a>
+											{/if}
+										</td>
+									</tr>
+								{/volist}
+							</tbody>
+						</table>
+					</div>
+					<div>
+		                {$list->render()|raw}
+		            </div>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>
+<script>
+	jQuery(function($) {
+		
+		$('#search').on('click', function() {
+			var form = document.getElementById('forms');
+
+            form.submit();			
+		});
+		
+		$('#searchAout').on('click', function() {
+			window.location.href = "{:Url('')}";
+		});
+		
+		$('table th input:checkbox').on('click', function() {
+			var that = this;
+			$(this).closest('table').find('tr > td:first-child input:checkbox')
+				.each(function() {
+					this.checked = that.checked;
+					$(this).closest('tr').toggleClass('selected');
+				});
+
+		});
+
+		$('[data-rel="tooltip"]').tooltip({
+			placement: tooltip_placement
+		});
+
+		function tooltip_placement(context, source) {
+			var $source = $(source);
+			var $parent = $source.closest('table')
+			var off1 = $parent.offset();
+			var w1 = $parent.width();
+
+			var off2 = $source.offset();
+			var w2 = $source.width();
+
+			if(parseInt(off2.left) < parseInt(off1.left) + parseInt(w1 / 2)) return 'right';
+			return 'left';
+		}
+		
+		
+	})
+
+	//查询状态
+	function  state(id) {
+		var url    = "{:Url('state')}";
+		var data   = {id:id};
+		ajaxPost(url,$("#state-btn"),data,function (r) {
+			$("#state-btn").removeAttr('disabled');
+			//location.reload();
+			var index = parent.layer.getFrameIndex(window.name);
+			parent.layer.close(index);
+		})
+	}
+</script>

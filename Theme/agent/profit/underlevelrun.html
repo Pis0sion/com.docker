@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>代理后台--提现记录</title>
+    <style type="text/css">
+        .pagination{display:inline-block;padding-left:0;border-radius:4px;float:right;margin-right:1rem;}
+        .pagination li{display:inline;}
+        .pagination li a,.pagination li span{position:relative;float:left;padding:4px 10px;line-height:1.5;color:#393D49;background:#fff;margin:0 0 0 5px;border:1px solid #eee}
+        .pagination li a:hover{color:#fff;background:#1E9FFF}
+        .pagination .active span{background:#1E9FFF;color:#fff;border-radius:30%;}
+        .pagination .disabled{display:none}
+    </style>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                  <a href="">首页</a>
+                  <a href="">分润管理</a>
+                  <a><cite>下级分润报表</cite></a>
+                </span>
+            </div>
+        </div>
+        <div class="layui-row layui-col-space20">
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <b>今日总金额</b>
+                                </div>
+                                <div class="total">{$todymoney}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <b>今日分润金额</b>
+                                </div>
+                                <div class="total">{$todyprofit}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <b>总交易额</b>
+                                </div>
+                                <div class="total">{$sunmoney}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layui-col-sm6 layui-col-md3">
+                <div class="layui-card">
+                    <div class="layui-card-body chart-card">
+                        <div class="chart-header">
+                            <div class="metawrap">
+                                <div class="meta">
+                                    <b>总分润</b>
+                                </div>
+                                <div class="total">{$sunprofit}</div>
+                            </div>
+                        </div>
+                        <div class="chart-body">
+                            <div class="contentwrap">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                        <div class="layui-form layui-form-item">
+                            <div class="layui-inline">
+                                <form>
+                                    <div class="layui-form-mid">代理 :</div>
+                                    <div class="layui-input-inline" style="width: 10rem;">
+                                        <input type="text" placeholder="用户名|手机号" name="account" value="{$getdata['account']}" class="layui-input" id="" lay-key="92">
+                                    </div>
+                                    <input type="hidden" name="pid" value="{$getdata['pid']}">
+                                    <button class="layui-btn layui-btn-blue">查询</button>
+                                    <a href="javascript:history.go(-1)" class="layui-btn layui-btn-primary">上一步</a>
+                                </form>
+                            </div>
+
+                        </div>
+                        <table id="demo">
+                          <table class="layui-table">
+                            <thead>
+                              <tr>
+                                <th>编号</th>
+                                <th>代理[姓名]</th>
+                                <th>上级</th>
+                                <th>总笔数</th>
+                                <th>总金额</th>
+                                <th>收款分润</th>
+                                <th>还款分润</th>
+                                <th>升级分润</th>
+                                <th>总分润</th>
+                                <th>操作</th>
+                                </tr>
+                            </thead>
+                            {volist name="list" id="vo"}
+                            <tbody>
+                              <tr>
+                                <td>{$vo.id}</td>
+                                <td>{$vo.aginfo}</td>
+                                <td>{$vo.agsuper}</td>
+                                <td>{$vo.couopens}</td>
+                                <td>{$vo.couamount}</td>
+                                <td>{$vo.skcoufenrun}</td>
+                                <td>{$vo.hkcoufenrun}</td>
+                                <td>{$vo.sjcoufenrun}</td>
+                                <td>{$vo.coufenrun}</td>
+                                <td>
+                                  <a title="" class="layui-btn layui-btn-xs" onclick="fine({$vo.id})" href="javascript:;">
+                                  按照明细汇总
+                                </a>
+                                {if $vo.agop=='yeval'}
+                                  <a title="" class="layui-btn layui-btn-normal layui-btn-xs" onclick="ageval({$vo.id})" href="javascript:;">
+                                  下级代理
+                                  </a>
+                                {/if}
+                                </td>
+                              </tr>
+                            </tbody>
+                            {/volist}
+                          </table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        {$list->render()|raw}
+    <script src="__JS__/layui.all.js"></script>
+
+    <script>
+        layui.use('laydate', function(){
+
+          var laydate = layui.laydate;
+          laydate.render({
+            elem: '#starttime' //指定元素
+          });
+
+          laydate.render({
+            elem: '#endtime' //指定元素
+          });
+
+        });
+
+        // 下级代理
+        function ageval(id){
+          window.location.href = "{:Url('agent/Profit/underlevelrun')}?pid="+id;
+        }
+
+        // 代理分润明细汇总
+        function fine(id){
+          window.location.href = "{:Url('agent/Profit/fenrunfine')}?pid="+id;
+        }
+
+    </script>
+</body>
+</html>

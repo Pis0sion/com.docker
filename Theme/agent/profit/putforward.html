@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <!-- <link rel="stylesheet" href="__CSS__/view.css"/> -->
+<!-- <link href="http://www.jq22.com/demo/jQueryTime-141124170801/css/lyz.calendar.css" rel="stylesheet" type="text/css" /> -->
+
+    <title></title>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-header">
+                  <div class="layui-page-header">
+                      <div class="pagewrap">
+                          <span class="layui-breadcrumb">
+                            <a href="">首页</a>
+                            <a href="">分润管理</a>
+                            <a><cite>分润提现</cite></a>
+                          </span>
+                      </div>
+                  </div>
+                </div>
+                <form class="layui-form layui-card-body" name="form" action="{:Url('agent/user/addagent')}" method="post">
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">提现银行卡</label>
+                    <div class="layui-input-block">
+                      <select name="bank" id="bank">
+                        <option value ="0">请选择</option>
+                        {volist name="bank" id="vo"}
+                          <option value ="{$vo.card_id}">{$vo.list_name}</option>
+                        {/volist}
+                      </select>
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">开始时间</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="startime" id="star"   lay-verify="required" readonly="readonly" placeholder="请选择开始时间" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">结束时间</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="endtime" id="end"  lay-verify="required" readonly="readonly" placeholder="请选择结束时间" autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">订单笔数</label>
+                    <div class="layui-input-block">
+                      <input type="text" name="order_count" id="order_count" value="{$count}" readonly="readonly" lay-verify="required"  autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <label class="layui-form-label">提现总额</label>
+                    <div class="layui-input-block">
+                      <input type="number" name="money_count" id="money_count" readonly="readonly" value="{$sunmoney}" lay-verify="required"  autocomplete="off" class="layui-input">
+                    </div>
+                  </div>
+                  <div class="layui-form-item">
+                    <div class="layui-input-block">
+                      <span class="layui-btn layui-btn-blue" lay-submit lay-filter="formDemo" onclick="sub()">立即提交</span>
+                      <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                    </div>
+                  </div>
+                </form>  
+            </div>
+        </div>
+    </div>
+<script src="__JS__/laydate.js?v=20171105"></script>
+<script src="__JS__/layui.all.js"></script>
+<script src="__JS__/layer/layer.js"></script>
+<script src="__JS__/jquery.min.js"></script>
+<script>
+layui.config({
+  version: 20171105
+});
+</script>
+</body>
+<script>
+  function sub(){
+    //获取结束时间，判断结束时间为上周周末
+    var endtime = $("#end").val();
+    var date1 = new Date(endtime);
+    var time1 = (date1.getTime()/1000)-60*60*8;
+
+    var statime = $("#star").val();
+    var date2 = new Date(statime);
+    var time2 = (date2.getTime()/1000)-60*60*8;
+    if(time2 > time1){
+      layer.msg('开始时间不能大于结束时间');
+    }
+    $.post("{:Url('agent/Profit/Putforward')}",$("form").serialize(),function(data){
+      if(data.error==0){
+        layer.msg(data.msg,{time:2000},function(){
+          window.location.href = '';
+        })
+      }else{
+        layer.msg(data.msg);
+      }
+    })
+  }
+</script>
+<script>
+(function() {
+  function util_date() {
+    var _today=new Date();
+    this.today=_today;
+    this.year=_today.getYear()+1900;//当前年份
+    this.Month_a=_today.getMonth();
+    this.Month=this.Month_a+1;//当前月份
+    this.day=_today.getDate();//当前日期
+    this.date=_today.getDay()==0?7:_today.getDay();//本周第几天 因系统会把周日作为第0天
+    this.Monday="";
+    this.Sunday="";
+    this.day_one="";
+  }
+  Date.prototype.pattern=function(fmt) {
+    var o = {
+    "M+" : this.getMonth()+1, //月份
+    "d+" : this.getDate(), //日
+    "h+" : this.getHours()%12 == 0 ? 12 : this.getHours()%12, //小时
+    "H+" : this.getHours(), //小时
+    "m+" : this.getMinutes(), //分
+    "s+" : this.getSeconds(), //秒
+    "q+" : Math.floor((this.getMonth()+3)/3), //季度
+    "S" : this.getMilliseconds() //毫秒
+    };
+    var week = {
+    "0" : "/u65e5",
+    "1" : "/u4e00",
+    "2" : "/u4e8c",
+    "3" : "/u4e09",
+    "4" : "/u56db",
+    "5" : "/u4e94",
+    "6" : "/u516d"
+    };
+    if(/(y+)/.test(fmt)){
+      fmt=fmt.replace(RegExp.$1, (this.getFullYear()+"").substr(4 - RegExp.$1.length));
+    }
+    if(/(E+)/.test(fmt)){
+      fmt=fmt.replace(RegExp.$1, ((RegExp.$1.length>1) ? (RegExp.$1.length>2 ? "/u661f/u671f" : "/u5468") : "")+week[this.getDay()+""]);
+    }
+    for(var k in o){
+      if(new RegExp("("+ k +")").test(fmt)){
+        fmt = fmt.replace(RegExp.$1, (RegExp.$1.length==1) ? (o[k]) : (("00"+ o[k]).substr((""+ o[k]).length)));
+      }
+    }
+    return fmt;
+  },
+  util_date.prototype = {
+      newToday : function(_today){
+        this.today=_today;
+        this.year=_today.getYear()+1900;//当前年份
+        this.Month_a=_today.getMonth();
+        this.Month=this.Month_a+1;//当前月份
+        this.day=_today.getDate();//当前日期
+        this.date=_today.getDay()==0?7:_today.getDay();//本周第几天 因系统会把周日作为第0天
+        this.Monday="";
+        this.Sunday="";
+        this.day_one="";
+      },
+      getMonday:function(){
+        if(this.Monday.length!=0){
+          return this.Monday;
+        }else{
+          var _monday = new Date(this.year,this.Month_a,this.day-this.date+1);
+          this.Monday = _monday;
+          return _monday;
+        }
+      },
+      getSunday:function(){
+        if(this.Sunday.length!=0){
+          return this.Sunday;
+        }else{
+          var _Sunday = new Date(this.year,this.Month_a,this.day-this.date+7);
+          this.Sunday = _Sunday;
+          return _Sunday;
+        }
+      },
+      getPreviousMonday:function(Monday){
+          var _monday = new Date(Monday.getYear()+1900,Monday.getMonth(),Monday.getDate()-7);
+          return _monday;
+      },
+      getPreviousSunday:function(Monday){
+          var _Sunday = new Date(Monday.getYear()+1900,Monday.getMonth(),Monday.getDate()-1);
+          this.Sunday = _Sunday;
+          return _Sunday;
+      },
+      getNextMonday:function(Monday){
+        var _monday = new Date(Monday.getYear()+1900,Monday.getMonth(),Monday.getDate()+7);
+        return _monday;
+      },
+      getNextSunday:function(Monday){
+        var _Sunday = new Date(Monday.getYear()+1900,Monday.getMonth(),Monday.getDate()+13);
+        this.Sunday = _Sunday;
+        return _Sunday;
+      }
+  };
+  window.util_date = new util_date();
+})();
+//获取当前的时间上周周末
+function timestampToTime(timestamp) {
+        var date = new Date(timestamp * 1000);//时间戳为10位需*1000，时间戳为13位的话不需乘1000
+        var Y = date.getFullYear() + '-';
+        var M = (date.getMonth()+1 < 10 ? '0'+(date.getMonth()+1) : date.getMonth()+1) + '-';
+        var D = date.getDate() + ' ';
+        var h = date.getHours() + ':';
+        var m = date.getMinutes() + ':';
+        var s = date.getSeconds();
+        return Y+M+D;
+}
+  var statimea = window.util_date.getMonday().pattern("yyyy-MM-dd");
+  var date     = new Date(statimea);
+  var time     = (date.getTime()/1000)-60*60*8-1;
+  var stime    = (date.getTime()/1000)-60*60*8-60*60*24*7;
+  var endtime  = timestampToTime(time);
+  var stimes   = timestampToTime(stime);
+  $("#end").val(endtime);
+  $("#star").val(stimes);
+  var ins22 = laydate.render({
+    elem: '#end'
+    ,min: '2016-10-14'
+    ,max: endtime
+    // ,ready: function(){
+    //   ins22.hint('日期可选时间在 2016-10-14 到 '+endtime);
+    // }
+    ,done:function(){
+      var endtime = $("#end").val();
+      var date1 = new Date(endtime);
+      var time1 = (date1.getTime()/1000)-60*60*8;
+
+      var statime = $("#star").val();
+      var date2 = new Date(statime);
+      var time2 = (date2.getTime()/1000)-60*60*8;
+      if(time2 > time1){
+        layer.msg('开始时间不能大于结束时间');
+        return false;
+      }
+      postselect();
+    }
+  });
+
+  laydate.render({
+    elem: '#star'
+    ,min: '2016-10-14'
+    ,max: endtime
+  });
+  postselect();
+  //选择结束时间查询数据
+  function postselect(){
+    var stra = $("#star").val();
+    var end  = $("#end").val();
+    $.ajax({ url: "{:Url('agent/Profit/Putforwardsub')}", type:'post',data: {'stra':stra,'end':end}, success: function(data){
+      if(data.error==0&&data.msg=='ok'){
+        $("#order_count").val(data.data.count);
+        $("#money_count").val(data.data.sunmoney);
+      }else{
+        layer.msg(data.msg);
+      }
+    }});
+  }
+</script>
+</html>

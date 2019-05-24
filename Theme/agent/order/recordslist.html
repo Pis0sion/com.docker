@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>代理后台--提现记录</title>
+    <style type="text/css">
+        .pagination{display:inline-block;padding-left:0;border-radius:4px;float:right;margin-right:1rem;}
+        .pagination li{display:inline;}
+        .pagination li a,.pagination li span{position:relative;float:left;padding:4px 10px;line-height:1.5;color:#393D49;background:#fff;margin:0 0 0 5px;border:1px solid #eee}
+        .pagination li a:hover{color:#fff;background:#1E9FFF}
+        .pagination .active span{background:#1E9FFF;color:#fff;border-radius:30%;}
+        .pagination .disabled{display:none}
+    </style>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                  <a href="">首页</a>
+                  <a href="">订单管理</a>
+                  <a><cite>收款订单</cite></a>
+                </span>
+            </div>
+        </div>
+       
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                        <div class="layui-form layui-form-item">
+                            <div class="layui-inline">
+                                <form>
+                                    <div class="layui-input-inline" style="width: 13rem;">
+                                        <input type="text" placeholder="姓名|手机号|用户名|订单号" name="txts" value="{$getdata['txts']}" class="layui-input" id="" lay-key="92">
+                                    </div>
+
+                                     <label class="layui-form-label">分润时间</label>
+                                      <div class="layui-input-inline" style="width: 100px;">
+                                        <input type="text" name="starttime" value="{if isset($getdata['starttime'])}{$getdata['starttime']}{/if}" class="layui-input" id="starttime" placeholder="开始日期" lay-key="92">
+                                      </div>
+                                      <div class="layui-form-mid">
+                                        -
+                                      </div>
+                                      <div class="layui-input-inline" style="width: 100px;">
+                                        <input type="text" name="endtime" value="{if isset($getdata['endtime'])}{$getdata['endtime']}{/if}" class="layui-input" id="endtime" placeholder="结束日期" lay-key="93">
+                                      </div>
+
+                                    <div class="layui-form-mid">状态：</div>
+                                      <div class="layui-input-inline" style="width: 100px;">
+                                        <select name="type">
+                                            <!--<option value="">全部</option>-->
+                                            <option value="1" {if isset($getdata['type']) && $getdata['type']==1}selected{/if} selected>已完成</option>
+                                            <option value="2" {if isset($getdata.type) && $getdata.type==2}selected{/if}>支付失败</option>
+                                            <option value="3" {if isset($getdata['type']) && $getdata['type']==3}selected{/if}>支付中</option>
+                                        </select>     
+                                    </div>
+
+                                    </div>
+                                    
+                                    <button class="layui-btn layui-btn-blue">查询</button>
+                                </form>
+                            </div>
+                        </div>
+                        <table id="demo">
+                          <table class="layui-table">
+                            <thead>
+                                <tr>
+                                    <th>编号</th>
+                                    <th>姓名[id]</th>
+                                    <th>手机</th>
+                                    <th>银行[id]</th>
+                                    <th>订单号</th>
+                                    <th>订单金额</th>
+                                    <th>实到金额</th>
+                                    <th>费率</th>
+                                    <th>状态</th>
+                                    <th>说明</th>
+                                    <th>时间  </th>
+                                </tr>
+                            </thead>
+                            {volist name="list" id="v"}
+                            <tbody>
+                                <tr>
+                                    <td>{$v.records_id}</td>
+                                    <td>{$v.user_name}[{$v.user_id}]</td>
+                                    <td>{$v.user_phone}</td>
+                                    <td>{$v.back_name}[{$v.back_id}]</td>
+                                    <td>{$v.records_form_no}</td>
+                                    <td>{$v.records_money}</td>
+                                    <td>{$v.records_money-$v.records_fee}</td>
+                                    <td>{$v.records_rate * 100}% +{$v.records_close_rate}元</td>
+                                    <td>
+                                        {switch v.records_state}
+                                            {case 0}未确认{/case}
+                                            {case 1}已完成{/case}
+                                            {case 2}支付失败{/case}
+                                            {case 3}支付中{/case}
+                                            {case 4}待付中{/case}
+                                            {default /}其他异常
+                                        {/switch}
+                                    </td>
+                                    <td>{if $v.records_state != 1}{$v.records_msg}{/if}</td>
+                                    <td>{$v.records_time|date='Y-m-d H:i:s'}</td>
+                                 </tr>
+                            </tbody>
+                            {/volist}
+                          </table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        {$list->render()|raw}
+    <script src="__JS__/layui.all.js"></script>
+
+    <script>
+        layui.use('laydate', function(){
+
+          var laydate = layui.laydate;
+          laydate.render({
+            elem: '#starttime' //指定元素
+          });
+
+          laydate.render({
+            elem: '#endtime' //指定元素
+          });
+
+        });
+
+    </script>
+</body>
+</html>

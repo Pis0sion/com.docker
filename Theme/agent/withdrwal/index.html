@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="__CSS__/layui.css">
+    <link rel="stylesheet" href="__CSS__/view.css"/>
+    <link rel="icon" href="/favicon.ico">
+    <title>代理后台--提现记录</title>
+    <style type="text/css">
+        .pagination{display:inline-block;padding-left:0;border-radius:4px;float:right;margin-right:1rem;}
+        .pagination li{display:inline;}
+        .pagination li a,.pagination li span{position:relative;float:left;padding:4px 10px;line-height:1.5;color:#393D49;background:#fff;margin:0 0 0 5px;border:1px solid #eee}
+        .pagination li a:hover{color:#fff;background:#1E9FFF}
+        .pagination .active span{background:#1E9FFF;color:#fff;border-radius:30%;}
+        .pagination .disabled{display:none}
+    </style>
+</head>
+<body class="layui-view-body">
+    <div class="layui-content">
+        <div class="layui-page-header">
+            <div class="pagewrap">
+                <span class="layui-breadcrumb">
+                  <a href="">首页</a>
+                  <a href="">提现管理</a>
+                  <a><cite>提现记录</cite></a>
+                </span>
+            </div>
+        </div>
+        <div class="layui-row">
+            <div class="layui-card">
+                <div class="layui-card-body">
+                    <div class="form-box">
+                        <div class="layui-form layui-form-item">
+                            <div class="layui-inline">
+                                <form>
+                                    <div class="layui-form-mid">申请状态:</div>
+                                    <div class="layui-input-inline" style="width: 100px;">
+                                        <select name="benefit_type">
+                                            <option value=""></option>
+
+                                            <option value="1" {if isset($getdata['benefit_type'])}{$getdata['benefit_type']=='1'? 'selected':''}{/if}>申请中</option>
+                                            <option value="2" {if isset($getdata['benefit_type'])}{$getdata['benefit_type']=='2'? 'selected':''}{/if}>已提现</option>
+                                            <option value="3" {if isset($getdata['benefit_type'])}{$getdata['benefit_type']=='3'? 'selected':''}{/if}>已拒绝</option>
+                                        </select>     
+                                    </div>
+
+                                    <div class="layui-inline">
+                                      <label class="layui-form-label">申请时间</label>
+                                      <div class="layui-input-inline" style="width: 100px;">
+                                        <input type="text" name="starttime" value="{if isset($getdata['starttime'])}{$getdata['starttime']}{/if}" class="layui-input" id="starttime" placeholder="开始日期" lay-key="92">
+                                      </div>
+                                      <div class="layui-form-mid">
+                                        -
+                                      </div>
+                                      <div class="layui-input-inline" style="width: 100px;">
+                                        <input type="text" name="endtime" value="{if isset($getdata['endtime'])}{$getdata['endtime']}{/if}" class="layui-input" id="endtime" placeholder="结束日期" lay-key="93">
+                                      </div>
+                                    </div>
+                                    
+                                    <button class="layui-btn layui-btn-blue">查询</button>
+                                </form>
+                            </div>
+                        </div>
+                        <table id="demo">
+                          <table class="layui-table">
+                            <thead>
+                              <tr>
+                                <th>编号</th>
+                                <th>提现卡号</th>
+                                <th>总笔数</th>
+                                <th>申请金额</th>
+                                <th>申请时间</th>
+                                <th>打款时间</th>
+                                <th>分润开始时间</th>
+                                <th>分润结束时间</th>
+                                <th>申请状态</th>
+                                <th>操作</th>
+                                </tr>
+                            </thead>
+                            {volist name="list" id="vo"}
+                            <tbody>
+                              <tr>
+                                <td>{$vo.benefit_id}</td>
+                                <td><b><a href="#" onclick="agcrd({$vo.benefit_cid})">{$vo.cardno}</a></b></td>
+                                <td>{$vo.benefit_count}</td>
+                                <td>{$vo.benefit_money}</td>
+                                <td>{$vo.benefit_time|date="Y-m-d H:i:s"}</td>
+                                <td>{$vo.benefit_pay_time|date="Y-m-d H:i:s"}</td>
+                                <td>{$vo.benefit_starttime|date="Y-m-d H:i:s"}</td>
+                                <td>{$vo.benefit_endtime|date="Y-m-d H:i:s"}</td>
+                                {if $vo.benefit_type==0}
+                                  <td>申请中</td>
+                                {elseif $vo.benefit_type==1}
+                                  <td style="color:gray">已出款</td>
+                                {elseif $vo.benefit_type==2}
+                                  <td style="color:red">已拒绝</td>
+                                {/if}
+                                <td>
+                                  <a title="" class="layui-btn layui-btn-xs" onclick="detail({$vo.benefit_id})" href="javascript:;">
+                                  详情
+                                </a>
+                                </td>
+                              </tr>
+                            </tbody>
+                            {/volist}
+                          </table>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        {$list->render()|raw}
+    <script src="__JS__/layui.all.js"></script>
+
+    <script>
+        layui.use('laydate', function(){
+
+          var laydate = layui.laydate;
+          laydate.render({
+            elem: '#starttime' //指定元素
+          });
+
+          laydate.render({
+            elem: '#endtime' //指定元素
+          });
+
+        });
+
+        // 查看详情
+        function detail(id){
+           window.location.href = "{:Url('agent/Withdrwal/wdetail')}?id="+id;
+        }
+
+        // 查看提现银行卡详情
+        function agcrd(id){
+            layer.open({
+              type: 2 //Page层类型
+              ,area: ['450px', '400px']
+              ,title: '提现银行卡'
+              ,shade: 0.5 //遮罩透明度
+              ,maxmin: false //允许全屏最小化
+              ,anim: 1 //0-6的动画形式，-1不开启
+              ,content: "{:Url('Agent/Withdrwal/crdsdetail')}?id="+id
+            });
+        }
+
+    </script>
+</body>
+</html>

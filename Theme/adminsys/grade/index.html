@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<script src="__MODES__/assets/js/jquery.min.js"></script>
+		<script type="text/javascript">
+			window.jQuery || document.write("<script src='__MODES__/assets/js/jquery-2.0.3.min.js'>" + "<" + "/script>");
+		</script>
+		<script type="text/javascript">
+			if("ontouchend" in document) document.write("<script src='__MODES__/assets/js/jquery.mobile.custom.min.js'>" + "<" + "/script>");
+		</script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.js"></script>
+		<script type="text/javascript" src="__JS__/H-ui.admin.js"></script>
+		
+		<script  src="__PLUGINS__/layer/layer.js"></script>
+	    <script  src="__PLUGINS__/common.js"></script>
+		<title>用户列表</title>
+	</head>
+	<body>
+		<div class="page-content clearfix">
+			<div id="Member_Ratings">
+				<div class="d_Confirm_Order_style">
+					<form method="post" action="">
+						<div class="search_style">
+							<ul class="search_content clearfix">
+								<li><label class="l_f">名称</label><input name="keywords" id="keywords" type="text" class="text_add" placeholder="输入名称" style=" width:400px" /></li>
+								<li style="width:90px;"><input type="submit" id="search" class="btn_search" value="查询"></li>
+
+								<li style="width:90px;"><button type="button" id="searchAout" class="btn_search"><i class="icon-search"></i>全部</button></li>
+							</ul>
+
+							<div><a title="添加" href="javascript:;" onclick="add()" class="btn btn-xs btn-success">添加</a></div>
+
+						</div>
+					</form>
+					<!---->
+					<div class="table_menu_list">
+						<table class="table table-striped table-bordered table-hover" >
+							<thead>
+								<tr>
+									<th width="25"><label><input type="checkbox" class="ace"><span class="lbl"></span></label></th>
+									<th>ID</th>
+									<th>排序</th>
+									<th>名称</th>
+									<th>状态</th>
+									<th>还款费率(%)</th>
+									<th>收款费用(%)</th>
+									<th>会员升级费率</th>
+									<th>承载量</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								{volist name='list' id='v' }
+									<tr>
+										<td><label><input type="checkbox" class="ace"><span class="lbl"></span></label></td>
+										<td>{$v.grade_id}</td>
+										<td>{$v.grade_sort}</td>
+										<td>{$v.grade_name}</td>
+										<td>
+											{switch v.grade_state}
+											    {case 0}正常{/case}
+											    {case 1}关闭{/case}
+											{/switch}
+										</td>
+										<td>{$v.grade_rate}</td>
+										<td>{$v.grade_rate_close}</td>
+										<td>{$v.grade_rate_upgrade}</td>
+										<td>{$v.grade_capacity}</td>
+
+										<td>
+											{if $v['grade_state'] == 0 }
+	                                    	<a href="javascript:void(0);" class="link-confirm btn btn-xs btn-waing" data-url="{:Url('/Admin/Grade/grstate')}?id={$v['grade_id']}" data-confirm="您确定要禁用吗？">禁用</a>
+	                                    	{else /}
+	                                    	<a href="javascript:void(0);" class="link-confirm btn btn-xs btn-info" data-url="{:Url('/Admin/Grade/grstate')}?id={$v['grade_id']}" data-confirm="您确定要启用吗？">启用</a>
+	                                    	{/if}
+	                                    	<a title="查看下级代理" href="javascript:;" onclick="seeagsub('{$v.grade_id}')" class="btn btn-xs btn-warning">下级代理</a>
+											<a title="编辑" href="javascript:;" onclick="edit('{$v.grade_id}')" class="btn btn-xs btn-success">编辑</a>
+											<a title="删除" href="javascript:;" class="link-confirm btn btn-xs btn-danger" data-url="{:Url('/Admin/Grade/grdelete')}?id={$v['grade_id']}" data-confirm="您确定要删除吗？">删除</a>
+										</td>
+									</tr>
+								{/volist}
+							</tbody>
+						</table>
+					</div>
+					<div>
+                        {//$list|raw}
+		            </div>
+				</div>
+			</div>
+		</div>
+		<!--添加用户图层-->
+		
+	</body>
+
+</html>
+<script>
+
+
+	// 添加操作
+	function add(id){
+		layer.open({
+		  type: 2,
+		  title: false,
+		  closeBtn: 1,
+		  area: ['70%', '70%'],
+		  shadeClose: true,
+		  skin: 'yourclass',
+		  content: "{:Url('Admin/Grade/gradd')}"
+		});
+		// window.location.href = "{:Url('Admin/Grade/gradd')}"; 
+	}
+
+	// 修改操作
+	function edit(id){
+		layer.open({
+		  type: 2,
+		  title: false,
+		  closeBtn: 1,
+		  area: ['70%', '70%'],
+		  shadeClose: true,
+		  skin: 'yourclass',
+		  content: "{:Url('Admin/Grade/grupde')}?id="+id
+		});
+		// window.location.href = "{:Url('Admin/Grade/grupde')}?id="+id; 
+	}
+
+	// 查看下级代理
+	function seeagsub(id){
+		window.location.href = "{:Url('Admin/Grade/grinfo')}?gid="+id; 
+	}
+
+	jQuery(function($) {
+		
+		$('#search').on('click', function() {
+			var text = $('#keywords').val();
+			if(text==''){
+				layer.msg('请输入搜索关键词');
+				return false;
+			}
+			// window.location.href = "{:Url('Admin/Grade/index')}?keywords="+text; 
+		});
+		
+		$('#searchAout').on('click', function() {
+			window.location.href = "{:Url('Admin/Grade/index')}"; 
+		});
+		
+		$('table th input:checkbox').on('click', function() {
+			var that = this;
+			$(this).closest('table').find('tr > td:first-child input:checkbox').each(function() {
+				this.checked = that.checked;
+				$(this).closest('tr').toggleClass('selected');
+			});
+
+		});
+
+	});
+
+</script>

@@ -1,0 +1,345 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="renderer" content="webkit|ie-comp|ie-stand">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta http-equiv="Cache-Control" content="no-siteapp" />
+		<link href="__MODES__/assets/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="__CSS__/style.css" />
+		<link href="__MODES__/assets/css/codemirror.css" rel="stylesheet">
+		<link rel="stylesheet" href="__MODES__/assets/css/ace.min.css" />
+		<link rel="stylesheet" href="__MODES__/assets/css/font-awesome.min.css" />
+		<!--[if IE 7]>
+	  <link rel="stylesheet" href="__MODES__/assets/css/font-awesome-ie7.min.css" />
+	<![endif]-->
+		<!--[if lte IE 8]>
+	  <link rel="stylesheet" href="__MODES__/assets/css/ace-ie.min.css" />
+	<![endif]-->
+		<script src="__PLUGINS__/jquery-1.9.1.min.js"></script>
+		<script src="__MODES__/assets/js/bootstrap.min.js"></script>
+		<script src="__MODES__/assets/js/typeahead-bs2.min.js"></script>
+		<script src="__MODES__/assets/js/jquery-ui-1.10.3.custom.min.js"></script>
+		<script src="__MODES__/assets/js/jquery.ui.touch-punch.min.js"></script>
+		<script src="__MODES__/assets/js/ace-elements.min.js"></script>
+		<script src="__MODES__/assets/js/ace.min.js"></script>
+		<title>编辑文章</title>
+
+		<script src="__PLUGINS__/layer/layer.js"></script>
+		<script src="__PLUGINS__/common.js"></script>
+
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.config.js"></script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/ueditor.all.min.js"> </script>
+		<script type="text/javascript" charset="utf-8" src="__PLUGINS__/ueditor1_4_3_3-utf8-php/lang/zh-cn/zh-cn.js"></script>
+
+
+	    <!-- <link href="__PLUGINS__/umeditor1_2_3-utf8-php/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+	    <script type="text/javascript" src="__PLUGINS__/umeditor1_2_3-utf8-php/third-party/jquery.min.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="__PLUGINS__/umeditor1_2_3-utf8-php/umeditor.config.js"></script>
+	    <script type="text/javascript" charset="utf-8" src="__PLUGINS__/umeditor1_2_3-utf8-php/umeditor.min.js"></script>
+	    <script type="text/javascript" src="__PLUGINS__/umeditor1_2_3-utf8-php/lang/zh-cn/zh-cn.js"></script> -->
+	</head>
+
+	<body>
+		<div class="margin clearfix">
+			<div class="stystems_style">
+				<div class="tabbable">
+
+					<div class="tab-content">
+						<form name="bank-form" id="bank-form" action="">
+						<div id="home" class="tab-pane active">
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>标题： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_title}" name="title" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>分类： </label>
+								<div class="col-sm-8">
+									<select name='type' class="col-xs-10 " style="margin-left:10px">
+										<option value="0">请选择分类</option>
+										{volist name='goods_type' id='v'}
+											<option value="{$v.type_id}" {if $info.goods_type_id==$v.type_id}selected{/if}>{$v.type_name}</option>
+										{/volist}
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1">商品广告词： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_jingle}" name="goods_jingle" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>兑换所需积分： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_integral}" name="integral" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>商品状态： </label>
+								<div class="col-sm-8">
+									<select name="state" id="type" class="col-xs-10" style="margin-left: 10px;">
+										<option value="">请选择</option>
+										<option {if $info.goods_state==1}selected{/if} value="1">上架</option>
+										<option {if $info.goods_state==2}selected{/if} value="2">下架</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>销售数量： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_salenum}" name="salenum" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>库存： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_storage}" name="storage" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>是否推荐商品： </label>
+								<div class="col-sm-8">
+									<select name="commend" id="type" class="col-xs-10" style="margin-left: 10px;">
+										<option value="0" {if $info.goods_commend==0}selected{/if}>否</option>
+										<option value="1" {if $info.goods_commend==1}selected{/if}>确认推荐</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>市场价格： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_marketprice}" name="marketprice" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>商品类型： </label>
+								<div class="col-sm-8">
+									<select name="goods_type" id="type" class="col-xs-10" style="margin-left: 10px;">
+										<option value="">请选择</option>
+										<option value="0" {if $info.goods_type==0}selected{/if}>积分兑换</option>
+										<option value="1" {if $info.goods_type==1}selected{/if}>余额购买</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>是否分销商品： </label>
+								<div class="col-sm-8">
+									<select name="distribution" id="type" class="col-xs-10" style="margin-left: 10px;">
+										<option value="0" {if $info.goods_distribution==0}selected{/if}>否</option>
+										<option value="1" {if $info.goods_distribution==1}selected{/if}>是</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>是否赠送积分(0为不送)： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_give_integral}" name="give_integral" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>赠送模式： </label>
+								<div class="col-sm-8">
+									<select name="distribution_type" id="type" class="col-xs-10" style="margin-left: 10px;">
+										<option value="0" {if $info.goods_distribution_type==0}selected{/if}>余额</option>
+										<option value="1" {if $info.goods_distribution_type==1}selected{/if}>积分</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>一级送余额： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_distribution_1}" name="goods_distribution_1" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>二级送余额： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_distribution_2}" name="goods_distribution_2" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>三级送余额： </label>
+								<div class="col-sm-8"><input type="text" value="{$info.goods_distribution_3}" name="goods_distribution_3" class="col-xs-10 "></div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>内容： </label>
+								<div class="col-sm-8">
+									<textarea class="col-xs-10" id="editor" style="height: 400px" name="body">{$info.goods_body}</textarea>
+									<script type="text/javascript">
+										var ue = UE.getEditor('editor');
+									</script>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>缩略图： </label>
+								<div class="col-sm-8">
+									<label>
+				                        <img src="{$info.goods_img}" width="50" height="50" id="img_thumb" onerror="this.src='/static/admin/images/image.png'">
+				                        <input name="img" type="hidden" id="img" value="{$info.goods_img}">
+				                    </label>
+				                    <label title="上传图片" for="img_photo" class="btn btn-primary">
+				                        <input type="file" name="img_photo" id="img_photo" class="hide" accept="image/gif,image/jpeg,image/x-png"> 上传图片
+				                    </label>
+								</div>
+							</div>
+							<div class="form-group"><label class="col-sm-2 control-label no-padding-right" for="form-field-1"><i>*</i>商品多图： </label>
+								<div class="col-sm-8">
+									<label>
+				                        <img src="{$imgs[0]}" width="50" height="50" id="img_thumb1" onerror="this.src='/static/admin/images/image.png'">
+				                        <input name="Mulimg1" type="hidden" id="Mulimg1" value="{$imgs[0]}">
+				                    </label>
+				                    <label title="上传图片" for="img_photo1" class="btn btn-xs btn-warning">
+				                        <input type="file" name="img_photo1" id="img_photo1" class="hide" accept="image/gif,image/jpeg,image/x-png"> 上传图片
+				                    </label>
+
+				                    <label>
+				                        <img src="{$imgs[1]}" width="50" height="50" id="img_thumb2" onerror="this.src='/static/admin/images/image.png'">
+				                        <input name="Mulimg2" type="hidden" id="Mulimg2" value="{$imgs[1]}">
+				                    </label>
+				                    <label title="上传图片" for="img_photo2" class="btn btn-xs btn-warning">
+				                        <input type="file" name="img_photo2" id="img_photo2" class="hide" accept="image/gif,image/jpeg,image/x-png"> 上传图片
+				                    </label>
+
+				                    <label>
+				                        <img src="{$imgs[2]}" width="50" height="50" id="img_thumb3" onerror="this.src='/static/admin/images/image.png'">
+				                        <input name="Mulimg3" type="hidden" id="Mulimg3" value="{$imgs[2]}">
+				                    </label>
+				                    <label title="上传图片" for="img_photo3" class="btn btn-xs btn-warning">
+				                        <input type="file" name="img_photo3" id="img_photo3" class="hide" accept="image/gif,image/jpeg,image/x-png"> 上传图片
+				                    </label>
+
+				                    <label>
+				                        <img src="{$imgs[3]}" width="50" height="50" id="img_thumb4" onerror="this.src='/static/admin/images/image.png'">
+				                        <input name="Mulimg4" type="hidden" id="Mulimg4" value="{$imgs[3]}">
+				                    </label>
+				                    <label title="上传图片" for="img_photo4" class="btn btn-xs btn-warning">
+				                        <input type="file" name="img_photo4" id="img_photo4" class="hide" accept="image/gif,image/jpeg,image/x-png"> 上传图片
+				                    </label>
+								</div>
+							</div>
+							<div class="Button_operation">
+				                <input name="id" type="hidden" value="{$info.goods_id}">
+								<button onclick="saveSubmit();" id="bank-btn" class="btn btn-primary radius" type="button"><i class="fa fa-save "></i>&nbsp;保存</button>
+							</div>
+						</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+		<script>
+			function  saveSubmit () {
+				var url    = $("#bank-form").attr('action');
+				var data   = $("#bank-form").serialize();
+				ajaxPost(url,$("#bank-btn"),data,function (r) {
+		            $("#bank-btn").removeAttr('disabled');
+		            //location.reload();
+                    window.parent.location.reload();
+		            var index = parent.layer.getFrameIndex(window.name);
+					parent.layer.close(index);
+		        })
+			}
+		</script>
+
+	    <script>
+	    	$('#img_photo1').change(function(event) {
+		        var formData = new FormData();
+		        formData.append("file", $(this).get(0).files[0]);
+		        $.ajax({
+		            url:'/admin/upload/upload_photo',
+		            type:'POST',
+		            data:formData,
+		            cache: false,
+		            contentType: false,    //不可缺
+		            processData: false,    //不可缺
+		            success:function(data){
+		                console.log(data)
+		                if(data.code=='0'){
+		                    $('#img_thumb1').attr('src',data.path);
+		                    $('#Mulimg1').val(data.path);
+		                    
+		                }else{
+		                    layer.open({
+		                        content:data.msg
+		                        ,skin: 'msg'
+		                    });
+		                }
+		            }
+		        });
+		    });
+	    	$('#img_photo2').change(function(event) {
+		        var formData = new FormData();
+		        formData.append("file", $(this).get(0).files[0]);
+		        $.ajax({
+		            url:'/admin/upload/upload_photo',
+		            type:'POST',
+		            data:formData,
+		            cache: false,
+		            contentType: false,    //不可缺
+		            processData: false,    //不可缺
+		            success:function(data){
+		                console.log(data)
+		                if(data.code=='0'){
+		                    $('#img_thumb2').attr('src',data.path);
+		                    $('#Mulimg2').val(data.path);
+		                    
+		                }else{
+		                    layer.open({
+		                        content:data.msg
+		                        ,skin: 'msg'
+		                    });
+		                }
+		            }
+		        });
+		    });
+	    	$('#img_photo4').change(function(event) {
+		        var formData = new FormData();
+		        formData.append("file", $(this).get(0).files[0]);
+		        $.ajax({
+		            url:'/admin/upload/upload_photo',
+		            type:'POST',
+		            data:formData,
+		            cache: false,
+		            contentType: false,    //不可缺
+		            processData: false,    //不可缺
+		            success:function(data){
+		                console.log(data)
+		                if(data.code=='0'){
+		                    $('#img_thumb4').attr('src',data.path);
+		                    $('#Mulimg4').val(data.path);
+		                    
+		                }else{
+		                    layer.open({
+		                        content:data.msg
+		                        ,skin: 'msg'
+		                    });
+		                }
+		            }
+		        });
+		    });
+		    $('#img_photo3').change(function(event) {
+		        var formData = new FormData();
+		        formData.append("file", $(this).get(0).files[0]);
+		        $.ajax({
+		            url:'/admin/upload/upload_photo',
+		            type:'POST',
+		            data:formData,
+		            cache: false,
+		            contentType: false,    //不可缺
+		            processData: false,    //不可缺
+		            success:function(data){
+		                console.log(data)
+		                if(data.code=='0'){
+		                    $('#img_thumb3').attr('src',data.path);
+		                    $('#Mulimg3').val(data.path);
+		                    
+		                }else{
+		                    layer.open({
+		                        content:data.msg
+		                        ,skin: 'msg'
+		                    });
+		                }
+		            }
+		        });
+		    });
+	    	$('#img_photo').change(function(event) {
+		        var formData = new FormData();
+		        formData.append("file", $(this).get(0).files[0]);
+		        $.ajax({
+		            url:'/admin/upload/upload_photo',
+		            type:'POST',
+		            data:formData,
+		            cache: false,
+		            contentType: false,    //不可缺
+		            processData: false,    //不可缺
+		            success:function(data){
+		                console.log(data)
+		                if(data.code=='0'){
+		                    $('#img_thumb').attr('src',data.path);
+		                    $('#img').val(data.path);
+		                    
+		                }else{
+		                    layer.open({
+		                        content:data.msg
+		                        ,skin: 'msg'
+		                    });
+		                }
+		            }
+		        });
+		    });
+	       
+
+	    </script>
+	</body>
+
+</html>
